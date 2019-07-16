@@ -25,7 +25,12 @@ if (jQuery) {
             setTimeout(function () {
                 $('body').removeClass('init');
             }, 500);
-        });
+
+            $('#sidebarCollapse').on('click', function () {
+              $('#sidebar').toggleClass('active');
+            });
+          });
+
         /*
         $(window).on("scroll", function() {
             if($(window).scrollTop()) {

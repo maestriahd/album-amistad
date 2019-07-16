@@ -15,7 +15,6 @@ $show-grid-backgrounds: true;
 $background-color: #fff;
 $text-color: #444;
 
-
 $accent-dark: #5C3F8D; // Slightly darker Purple for title and visited links.
 $accent-main: #684B98; // Purple
 $accent-light: #BE75CB; // Pink
@@ -27,11 +26,28 @@ $grey-light: #ddd; // Primary accent
 // ---------------------------------------------------------------------------
 // Typography
 
-$font-family-main: 'Lato', Verdana, Arial, sans-serif;
+
+@font-face {
+  font-family: 'kapra';
+  src: url('../fonts/Kapra.otf');
+}
+
+@font-face {
+  font-family: 'kapra-bold';
+  src: url('../fonts/Kapra-Bold.otf');
+}
+@font-face {
+  font-family: 'kapra-condensed';
+  src: url('../fonts/Kapra-Condensed.otf');
+}
+
+
+
+$font-family-main: 'Open Sans', Verdana, Arial, sans-serif;
 $base-font-size: 16px;
 $base-line-height: 24px;
 //$font-family-title: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
-$font-family-title: 'Raleway', sans-serif;
+$font-family-title: 'Kapra', sans-serif;
 
 
 $spacing-unit: $base-line-height;

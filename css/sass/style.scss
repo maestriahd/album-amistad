@@ -2,12 +2,14 @@
 /* Imports */
 @import "normalize";
 //@import "susy";
+@import "node_modules/bootstrap/scss/functions";
+@import "variables";
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/bootstrap/scss/mixins";
-@import "variables";
 @import "base";
 @import "mixins";
 
+@import "node_modules/font-awesome/scss/font-awesome";
 
 /* -------------------------------------------------------------------------*/
 /* Screen */

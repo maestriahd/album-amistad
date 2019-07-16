@@ -3,7 +3,9 @@
   "version": "2.4.0",
   "description": "\"Clean lines, architectural.\"",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",

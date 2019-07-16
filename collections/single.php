@@ -1,4 +1,4 @@
-<div class="collection record col col-sm-1 col-md-4">
+<div class="collection record col-sm-12">
   <div class="card">
     <?php if ($collectionImage = record_image($collection, 'square_thumbnail',array('class' => 'img-fluid card-img-top') )): ?>
         <?php echo link_to($this->collection, 'show', $collectionImage, array('class' => 'img-fluid ')); ?>

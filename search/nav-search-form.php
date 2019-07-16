@@ -1,6 +1,24 @@
+<?php
+  $search_icon = '<i class="icon-search icon-large"></i>';
+  //$search_icon_img =  img('lupa.png');
+  //$search_icon = '<img src="'. $search_icon_img . '" alt="" />';
+  ?>
+
+
+<div class="w-100">
+
 <?php echo $this->form('search-form', $options['form_attributes']); ?>
-    <?php echo $this->formText('query', $filters['query'], array('title' => __('Search'), 'class'=>'form-control')); ?>
+<div class="input-group">
+  <div class="input-group-prepend w-100">
+    <?php echo $this->formText('query', $filters['query'], array('title' => __('Search'), 'class'=>'form-control', 'placeholder'=> 'Que estas buscando ?')); ?>
+    <?php echo $this->formButton('submit_search', '', array('type' => 'submit', 'class'=>'btn btn-search btn-primary')); ?>
+  </div>
+</div>
+<div class="w-100">
+  <?php echo link_to_item_search(__('Advanced Search (Items only)')); ?>
+</div>
     <?php if ($options['show_advanced']): ?>
+
     <div id="advanced-form">
         <fieldset id="query-types">
             <legend><?php echo __('Search using this query type:'); ?></legend>
@@ -16,7 +34,6 @@
         <?php elseif (is_admin_theme()): ?>
             <p><a href="<?php echo url('settings/edit-search'); ?>"><?php echo __('Go to search settings to select record types to use.'); ?></a></p>
         <?php endif; ?>
-        <p><?php echo link_to_item_search(__('Advanced Search (Items only)')); ?></p>
     </div>
     <?php else: ?>
         <?php echo $this->formHidden('query_type', $filters['query_type']); ?>
@@ -24,4 +41,6 @@
         <?php echo $this->formHidden('record_types[]', $type); ?>
         <?php endforeach; ?>
     <?php endif; ?>
-    <?php echo $this->formButton('submit_search', $options['submit_value'], array('type' => 'submit', 'class'=>'btn btn-outline-primary')); ?>
+
+</div>
+</form>

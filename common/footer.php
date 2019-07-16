@@ -1,4 +1,7 @@
         </article>
+      </div>
+      </div><!-- end wrap -->
+
 
         <footer role="contentinfo">
 

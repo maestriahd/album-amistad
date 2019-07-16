@@ -68,7 +68,10 @@ gulp.task('css', function() {
     return gulp.src('./css/sass/*.scss')
         .pipe(sass({
             outputStyle: 'nested',
-            includePaths: ['./node_modules/bootstrap/scss']
+            includePaths: ['./node_modules/bootstrap/scss',
+                            './fonts',
+                            './node-modules/font-awesome/scss'
+                          ]
         }).on('error', sass.logError))
         .pipe(postcss([
             autoprefixer({browsers: ['> 5%', '> 5% in US', 'last 2 versions']})

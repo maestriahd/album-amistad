@@ -41,53 +41,70 @@
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <a href="#content" id="skipnav"><?php echo __('Skip to main content'); ?></a>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
-    <div id="wrap" class="container-fluid">
 
-        <header role="banner">
-                <nav class="navbar navbar-expand-md navbar-light py-3 fixed-top">
-                  <div class="container-fluid">
+    <div id="wrap" class="d-flex">
 
-                  <div class="row w-100">
-                    <div class="col-sm-12 col-md-6">
-                      <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
-                      <div id="site-title">
-                          <?php echo link_to_home_page(option('site_title')); ?>
+  <!-- sidebar -->
+      <nav class="sidebar container-fluid" id="sidebar">
+
+          <div class="row mt-5">
+            <div class="col-sm-12 sidebar-upper">
+            </div>
+            <div class="col-sm-12">
+
+              <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
+              <div id="site-title">
+                  <?php echo link_to_home_page(theme_logo()); ?>
+              </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <button type="button" name="button" data-toggle="collapse" class="btn btn-outline-primary float-right" id="sidebarCollapse">close</button>
+
+
+            </div>
+            <div class="col-sm-12">
+                <?php
+                  $partial = array('common/menu-partial.phtml', 'default');
+                  $nav = public_nav_main();
+                  $nav->setUlClass('navbar-nav')->setPartial($partial);
+                  echo $nav->render();
+                ?>
+            </div>
+          </div>
+      </nav>
+
+
+              <!-- end sidebar -->
+
+        <div id="main" >
+              <!-- header -->
+              <header class="container-fluid" id="secondary-header">
+                  <div class="row  header-middle mt-5">
+                    <div class="col">
+                      <div class="row h-128">
+                        <div class="col sq-margin bg-1"></div>
+                        <div class="col sq-margin bg-2"></div>
+                        <div class="col sq-margin bg-3"></div>
+                        <div class="col sq-margin bg-4" ></div>
+                        <div class="col sq-margin bg-5"></div>
+                        <div class="col sq-margin bg-6"></div>
+                        <div class="col sq-margin bg-7"></div>
+                        <div class="col sq-margin bg-8"></div>
                       </div>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
                     </div>
-                    <div class="col-sm-12 col-md-6">
-                      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                          <?php
-                            $partial = array('common/menu-partial.phtml', 'default');
-                            $nav = public_nav_main();
-                            $nav->setUlClass('navbar-nav float-right')->setPartial($partial);
-                            echo $nav->render();
-                          ?>
-
-                          <form class="form-inline my-2  mx-5">
-                            <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
-                            <?php echo search_form(array('show_advanced' => true)); ?>
-                            <?php else: ?>
-                            <?php echo search_form(); ?>
-                            <?php endif; ?>
-                          </form>
-                          <div class="logo">
-                            <?php echo theme_logo(); ?>
-                          </div>
-                      </div>
+                    <div class="col d-flex align-items-center">
+                      <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
+                      <?php echo nav_search_form(array('show_advanced' => true)); ?>
+                      <?php else: ?>
+                      <?php echo nav_search_form(); ?>
+                      <?php endif; ?>
                     </div>
                   </div>
-                </div>
-                </nav>
-        </header>
-      </div><!-- end wrap -->
 
-        <div class="jumbotron-fluid hero" style="background-image:url(<?php echo hero_image_path(); ?>);">
-        </div>
+              </header>
+              <!-- end header -->
 
+              <article id="content" role="main" tabindex="-1" class="container-fluid">
 
-        <article id="content" role="main" tabindex="-1" class="container">
-
-            <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
+                  <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>

@@ -5,9 +5,10 @@
     <h2><?php echo html_escape(__($setName)); ?></h2>
   -->
     <?php endif; ?>
+    <dl id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="element row border-bottom" >
+
     <?php foreach ($setElements as $elementName => $elementInfo): ?>
 
-    <dl id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="element row border-bottom" >
       <dt class="col-sm-4">
           <?php echo html_escape(__($elementName)); ?>
       </dt>
@@ -16,9 +17,10 @@
             <div class="element-text"><?php echo $text; ?></div>
         <?php endforeach; ?>
       </dd>
-    </dl>
 
 <!-- end element -->
     <?php endforeach; ?>
+  </dl>
+
 </div><!-- end element-set -->
 <?php endforeach;

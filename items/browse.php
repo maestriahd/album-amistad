@@ -38,8 +38,8 @@ echo head(array('title' => $pageTitle, 'bodyclass' => 'items browse'));
 </div>
 <div class="row">
   <?php foreach (loop('items') as $item): ?>
-  <div class="item hentry col col-sm-1 col-md-4 my-4">
-    <div class="card">
+  <div class="item hentry col col-sm-1 col-md-3 col-lg-2 my-4">
+    <div class="card item-card">
       <?php if (metadata('item', 'has files')): ?>
           <?php echo link_to_item(item_image('square_thumbnail', array('class' => 'img-fluid card-img-top'), 0, $item)); ?>
       <?php endif; ?>
@@ -52,16 +52,6 @@ echo head(array('title' => $pageTitle, 'bodyclass' => 'items browse'));
               <h5 class="card-subtitle"><?php echo $date; ?></h5>
           <?php endif; ?>
 
-          <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet' => 250))): ?>
-          <div class="item-description card-text">
-              <?php echo $description; ?>
-          </div>
-        <?php endif; ?>
-        <?php if (metadata('item', 'has tags')): ?>
-        <div class="tags"><p><strong><?php echo __('Tags'); ?>:</strong>
-            <?php echo tag_string('items'); ?></p>
-        </div>
-        <?php endif; ?>
         <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' => $item)); ?>
 
       </div>
