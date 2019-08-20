@@ -18,7 +18,7 @@ $sortLinks[__('Date Added')] = 'added';
 <div class="row">
   <?php foreach (loop('collections') as $collection): ?>
 
-  <div class="collection col-sm-1 col-md-4 my-4">
+  <div class="collection col-md-12 col-lg-4 col-xl-3 my-4">
     <div class="card item-card">
       <?php if ($collectionImage = record_image('collection', 'square_thumbnail', array('class'=>'img-fluid card-img-top'))): ?>
           <?php echo link_to_collection($collectionImage, array('class' => 'image')); ?>

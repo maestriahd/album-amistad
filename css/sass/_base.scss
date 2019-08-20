@@ -15,13 +15,13 @@ $show-grid-backgrounds: true;
 $background-color: #fff;
 $text-color: #444;
 
-$accent-dark: #5C3F8D; // Slightly darker Purple for title and visited links.
-$accent-main: #684B98; // Purple
-$accent-light: #BE75CB; // Pink
+$accent-dark: #39354F; // Slightly darker Purple for title and visited links.
+$accent-main: #626289; // Purple
+$accent-light: #A6A6CE; // Pink
 
-$grey-dark: #363636; // tag cloud
-$grey-medium: #555; //Headers
-$grey-light: #ddd; // Primary accent
+$grey-dark: $gray-800; // tag cloud
+$grey-medium: $gray-500; //Headers
+$grey-light: $gray-200 ; // Primary accent
 
 // ---------------------------------------------------------------------------
 // Typography

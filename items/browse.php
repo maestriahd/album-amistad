@@ -38,7 +38,7 @@ echo head(array('title' => $pageTitle, 'bodyclass' => 'items browse'));
 </div>
 <div class="row">
   <?php foreach (loop('items') as $item): ?>
-  <div class="item hentry col col-sm-1 col-md-3 col-lg-2 my-4">
+  <div class="item hentrycol-sm-12 col-md-12 col-lg-4 col-xl-3 my-4">
     <div class="card item-card">
       <?php if (metadata('item', 'has files')): ?>
           <?php echo link_to_item(item_image('square_thumbnail', array('class' => 'img-fluid card-img-top'), 0, $item)); ?>

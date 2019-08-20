@@ -45,10 +45,11 @@
     <div id="wrap" class="d-flex">
 
   <!-- sidebar -->
-      <nav class="sidebar container-fluid" id="sidebar">
+      <nav class="sidebar container-fluid sticky-top" id="sidebar">
 
-          <div class="row mt-5">
+          <div class="row">
             <div class="col-sm-12 sidebar-upper">
+
             </div>
             <div class="col-sm-12">
 
@@ -56,10 +57,6 @@
               <div id="site-title">
                   <?php echo link_to_home_page(theme_logo()); ?>
               </div>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <button type="button" name="button" data-toggle="collapse" class="btn btn-outline-primary float-right" id="sidebarCollapse">close</button>
 
 
             </div>
@@ -74,14 +71,19 @@
           </div>
       </nav>
 
-
               <!-- end sidebar -->
-
         <div id="main" >
               <!-- header -->
               <header class="container-fluid" id="secondary-header">
-                  <div class="row  header-middle mt-5">
-                    <div class="col">
+                <div class="row">
+                  <div class="col d-flex align-items-center p-3">
+                    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" class="btn btn-outline-primary float-right" id="sidebarCollapse">
+                      <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+                  <div class="row  header-middle">
+                    <div class="col d-md-none d-lg-block">
                       <div class="row h-128">
                         <div class="col sq-margin bg-1"></div>
                         <div class="col sq-margin bg-2"></div>
