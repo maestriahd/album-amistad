@@ -7,7 +7,7 @@ $date = metadata($item, array('Dublin Core', 'Date'));
 
 <div class="item record col-sm-12 my-4">
 
-  <div class="card">
+  <div class="card border-0">
     <?php if (metadata($item, 'has files')) {
         echo link_to_item(
             item_image('square_thumbnail', array('class' => 'img-fluid card-img-top'), 0, $item),

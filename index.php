@@ -33,7 +33,7 @@
   <?php if (get_theme_option('Display Featured Collection') !== '0'): ?>
 
     <div class="col-sm-12 col-md-4" id="featured-item">
-      <h2 class="my-5 border-primary border-bottom "><?php echo __('Featured Collection'); ?></h2>
+      <h2 class="my-5 border-bottom"><?php echo __('Featured Collection'); ?></h2>
       <div class="row" >
         <?php echo random_featured_collection(); ?>
       </div>

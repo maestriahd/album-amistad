@@ -24,6 +24,10 @@
         </div>
       </div>
       <div class="col-sm-12">
+
+      <div class="col-sm-12">
+        <a href="<?php echo metadata('item',array('Item Type Metadata', 'URL')); ?>" target="_blank" class="btn btn-outline-primary">Ver en Biblioteca Nacional</a>
+      </div>
         <!-- The following returns all of the files associated with an item. -->
         <?php if ((get_theme_option('Item FileGallery') == 1) && metadata('item', 'has files')): ?>
         <div class="col-sm-12">
@@ -47,7 +51,7 @@
 
     <!-- The following prints a list of all tags associated with the item -->
   <?php if (metadata('item', 'has tags')): ?>
-    <div class="col-sm-12">
+  <div class="col-sm-12">
     <div id="item-tags" class="element my-4">
         <h3><?php echo __('Tags'); ?></h3>
         <div class="element-text"><?php echo tag_string('item'); ?></div>
