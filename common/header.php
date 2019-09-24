@@ -58,6 +58,25 @@
                   <?php echo link_to_home_page(theme_logo()); ?>
               </div>
 
+            </div>
+            <?php
+              $tags = get_records('Tag',array(), 25);
+             ?>
+            <div class="col-sm-12 my-4">
+              <div class="accordion mx-4" id="generos-nav">
+                  <a class="btn btn-secondary btn-obra w-100" data-toggle="collapse" href="#obra-accordion" role="button" aria-expanded="false" aria-controls="obra-accordion">OBRA</a>
+                  <nav >
+                  <ul class="generos-list collapse"  id="obra-accordion">
+                    <?php foreach($tags as $key=>$tag): ?>
+                    <li class="list-group-item">
+                      <a href="<?php echo url('items/browse', array('tags' => $tag->name)) ?>">
+                        <?php echo $tag->name; ?>
+                       </a>
+                    </li>
+                  <?php endforeach; ?>
+                  </ul>
+                </nav>
+              </div>
 
             </div>
             <div class="col-sm-12">

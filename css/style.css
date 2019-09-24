@@ -13765,22 +13765,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #adb5bd; }
 
 h4, h6 {
-  font-style: 19.2px; }
+  font-style: 1.2rem; }
 
 h5, h6 {
   font-weight: bold; }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   clear: both;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  text-transform: uppercase; }
 
 h2 {
-  font-size: 32px;
-  text-transform: capitalize; }
+  font-size: 2rem;
+  text-transform: uppercase; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 1.5rem; }
 
 h6 {
   font-size: italic; }
@@ -13792,10 +13793,15 @@ h6 {
   font-size: 32px;
   font-weight: bold;
   line-height: 48px;
-  margin: 20px 0; }
+  margin: 40px 20px 20px 20px;
+  padding: 20px;
+  border-bottom: 1px solid #302D3D; }
   #site-title a {
     text-decoration: none;
     color: #302D3D; }
+    #site-title a img {
+      max-width: 100%;
+      height: auto; }
 
 /* -------------------------------------------------------------------------*/
 /* Utilities */
@@ -13864,6 +13870,9 @@ h6 {
 
 /* -------------------------------------------------------------------------*/
 /* Components */
+.card .card-title {
+  text-transform: uppercase; }
+
 /* -------------------------------------------------------------------------*/
 /* Links */
 /* -------------------------------------------------------------------------*/
@@ -14755,6 +14764,26 @@ body.files .item-file {
 /* Navigation */
 .navbar {
   background-color: white; }
+
+#generos-nav .btn-obra {
+  font-size: 1.6rem;
+  font-family: 'kapra-bold'; }
+
+#generos-nav .generos-list {
+  padding-left: 0; }
+  #generos-nav .generos-list .list-group-item-collapsed {
+    color: #7E7EA5;
+    background-color: #CEC0D2; }
+    #generos-nav .generos-list .list-group-item-collapsed.list-group-item-action:hover, #generos-nav .generos-list .list-group-item-collapsed.list-group-item-action:focus {
+      color: #7E7EA5;
+      background-color: #c2b1c7; }
+    #generos-nav .generos-list .list-group-item-collapsed.list-group-item-action.active {
+      color: #fff;
+      background-color: #7E7EA5;
+      border-color: #7E7EA5; }
+  #generos-nav .generos-list .list-group-item {
+    font-size: 1.4rem;
+    font-family: 'kapra-bold'; }
 
 #sidebar .navbar-nav {
   background-color: #CEC0D2;

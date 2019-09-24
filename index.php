@@ -1,24 +1,31 @@
+<?php
+
+//$biografia = get_record('Item', array( 'advanced' => array( array('element_id' => 'Identifier', 'type' => 'is exactly', 'terms' => 'biografia_sas' )) ));
+ ?>
+
 <?php echo head(array('bodyid'=>'home')); ?>
 
 <div class="row" id="featured">
 
-
-  <?php if (get_theme_option('hero')): ?>
-
+  <?php if (get_theme_option('bio')): ?>
+  <?php $biografia = get_record_by_id('Item', (int)get_theme_option('bio')); ?>
   <div class="col-sm-12 col-md-4" id="featured-item">
     <div class="card border-0">
-      <h2 class="my-5 border-primary border-bottom">Soledad Acosta de Samper</h2>
-      <img src="<?php echo hero_image_path(); ?>" class="card-img-top" alt="">
+      <h2 class="my-5 border-primary border-bottom"><?php echo metadata($biografia, array('Dublin Core','Title')); ?></h2>
+      <?php echo record_image($biografia, 'fullsize', array('class'=>'card-img-top')); ?>
+
       <div class="card-body">
         <p class="card-text">
-          <?php echo get_theme_option('Homepage Text');?>
+          <?php echo metadata($biografia, array('Item Type Metadata','Text')) ?>
         </p>
-        <a href="#" class="btn btn-primary">leer más</a>
+        <?php  ?>
+        <a href=<?php echo url('biografia'); ?> class="btn btn-primary">leer más</a>
       </div>
     </div>
   </div>
 
 <?php endif; ?>
+
   <?php if (get_theme_option('Display Featured Item') !== '0'): ?>
 
   <div class="col-sm-12 col-md-4" id="featured-item">
@@ -33,7 +40,7 @@
   <?php if (get_theme_option('Display Featured Collection') !== '0'): ?>
 
     <div class="col-sm-12 col-md-4" id="featured-item">
-      <h2 class="my-5 border-bottom"><?php echo __('Featured Collection'); ?></h2>
+      <h2 class="my-5 border-primary border-bottom "><?php echo __('Featured Collection'); ?></h2>
       <div class="row" >
         <?php echo random_featured_collection(); ?>
       </div>

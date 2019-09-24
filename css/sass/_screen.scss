@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h4, h6 {
-    font-style: $base-font-size * 1.2;
+    font-style: $spacer * 1.2;
 }
 
 h5, h6 {
@@ -267,19 +267,21 @@ h5, h6 {
 }
 
 h1 {
-    font-size: $base-font-size *2.5;
+    font-size: $spacer * 2.5;
     clear:both;
     word-wrap: break-word;
+    text-transform: uppercase;
 }
 
 h2 {
-    font-size: $base-font-size * 2;
-    text-transform: capitalize;
+    font-size: $spacer * 2;
+    //text-transform: capitalize;
+    text-transform: uppercase;
     //border-top: 4px solid $grey-light;
 }
 
 h3 {
-    font-size: $base-font-size * 1.5;
+    font-size: $spacer * 1.5;
 }
 
 h6 {
@@ -293,8 +295,18 @@ h6 {
     font-size: $base-font-size * 2;
     font-weight: bold;
     line-height: $base-line-height * 2;
-    margin: 20px 0;
-    a{text-decoration:none; color:$primary;}
+    margin: 40px 20px 20px 20px;
+    padding: 20px;
+    a{
+      text-decoration:none;
+      color:$primary;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    border-bottom: 1px solid $primary;
+
 }
 
 /* -------------------------------------------------------------------------*/
@@ -383,6 +395,13 @@ h6 {
 
 /* -------------------------------------------------------------------------*/
 /* Components */
+
+
+.card{
+  .card-title{
+    text-transform: uppercase;
+  }
+}
 
 /* -------------------------------------------------------------------------*/
 /* Links */
@@ -1285,6 +1304,24 @@ body.files .item-file {
 }
 
 //sidebar menu
+
+#generos-nav{
+  .btn-obra{
+    font-size: $spacer * 1.6;
+    font-family: 'kapra-bold';
+  }
+  .generos-list{
+    @include list-group-item-variant('collapsed', $purple-nav, $purple-4);
+    padding-left:0;
+    .list-group-item{
+      font-size: $spacer * 1.4;
+      font-family: 'kapra-bold';
+    }
+  }
+}
+
+
+
 #sidebar{
   .navbar-nav{
     background-color: $purple-nav;
