@@ -24,10 +24,12 @@
         </div>
       </div>
       <div class="col-sm-12">
+      <?php if ($url = metadata('item',array('Item Type Metadata', 'URL'))): ?>
+        <div class="col-sm-12">
+          <a href="<?php echo $url; ?>" target="_blank" class="btn btn-outline-primary">Ver en Biblioteca Nacional</a>
+        </div>
+      <?php endif; ?>
 
-      <div class="col-sm-12">
-        <a href="<?php echo metadata('item',array('Item Type Metadata', 'URL')); ?>" target="_blank" class="btn btn-outline-primary">Ver en Biblioteca Nacional</a>
-      </div>
         <!-- The following returns all of the files associated with an item. -->
         <?php if ((get_theme_option('Item FileGallery') == 1) && metadata('item', 'has files')): ?>
         <div class="col-sm-12">
