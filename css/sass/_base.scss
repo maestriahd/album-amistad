@@ -40,6 +40,20 @@ $grey-light: $gray-200 ; // Primary accent
   font-family: 'kapra-condensed';
   src: url('../fonts/Kapra-Condensed.otf');
 }
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url('../fonts/OpenSans-Light.ttf');
+}
 
 
 
@@ -47,7 +61,8 @@ $font-family-main: 'Open Sans', Verdana, Arial, sans-serif;
 $base-font-size: 16px;
 $base-line-height: 24px;
 //$font-family-title: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
-$font-family-title: 'Kapra', sans-serif;
+//$font-family-title: 'Kapra', sans-serif;
+$font-family-title: 'Abril Fatface', cursive;
 
 
 $spacing-unit: $base-line-height;

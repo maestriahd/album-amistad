@@ -5,10 +5,8 @@ $totalItems = metadata('collection', 'total_items');
 
 <?php echo head(array('title' => $collectionTitle, 'bodyclass' => 'collections show')); ?>
 
-
 <div class="row">
   <div class="col-sm-12">
-
     <h1 class="my-5 text-center" ><?php echo $collectionTitle; ?></h1>
   </div>
   <div class="col-sm-12">

@@ -8,6 +8,7 @@
  *    user zoom.
  */
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -11244,6 +11245,18 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'kapra-condensed';
   src: url("../fonts/Kapra-Condensed.otf"); }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/OpenSans-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url("../fonts/OpenSans-Light.ttf"); }
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -13553,32 +13566,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* -------------------------------------------------------------------------*/
 /* Screen */
-/* -------------------------------------------------------------------------*/
-/* Table of Contents
--- General Styles
----- Layout
----- General Styles
----- Headings
----- Links
--- Navigation
----- General Nav
----- Mega-Menu Navigation
--- Forms
----- Search
----- Advanced Search
--- Tables
--- Content
----- Browse and Item Pages
----- Collections
----- TagCloud
--- Plugins
----- Simple Pages
----- Geolocation
----- Exhibits
-
-/* -------------------------------------------------------------------------*/
-/* Layout */
-#wrap {
+'Abril Fatface' #wrap {
   width: 100%;
   -ms-flex-align: stretch;
       align-items: stretch; }
@@ -13606,7 +13594,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .header-middle {
   border-top: 3px solid #302D3D;
-  border-bottom: 3px solid #302D3D; }
+  border-bottom: 3px solid #302D3D;
+  height: 250px; }
 
 #search-container {
   width: 100%;
@@ -13757,12 +13746,12 @@ blockquote {
 /* -------------------------------------------------------------------------*/
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Kapra", sans-serif;
+  font-family: "Abril Fatface", cursive;
   font-weight: normal;
   line-height: 36px;
   padding: .5em 0;
   margin: 0;
-  color: #adb5bd; }
+  color: #302D3D; }
 
 h4, h6 {
   font-style: 1.2rem; }
@@ -13773,12 +13762,10 @@ h5, h6 {
 h1 {
   font-size: 2.5rem;
   clear: both;
-  word-wrap: break-word;
-  text-transform: uppercase; }
+  word-wrap: break-word; }
 
 h2 {
-  font-size: 2rem;
-  text-transform: uppercase; }
+  font-size: 2rem; }
 
 h3 {
   font-size: 1.5rem; }
@@ -13788,20 +13775,18 @@ h6 {
 
 #site-title {
   color: #302D3D;
-  font-family: "Kapra", sans-serif;
-  text-transform: uppercase;
+  font-family: "Abril Fatface", cursive;
   font-size: 32px;
   font-weight: bold;
   line-height: 48px;
-  margin: 40px 20px 20px 20px;
-  padding: 20px;
-  border-bottom: 1px solid #302D3D; }
+  padding: 20px; }
   #site-title a {
     text-decoration: none;
     color: #302D3D; }
     #site-title a img {
-      max-width: 100%;
-      height: auto; }
+      width: auto;
+      height: 100%;
+      vertical-align: bottom; }
 
 /* -------------------------------------------------------------------------*/
 /* Utilities */
@@ -13870,9 +13855,6 @@ h6 {
 
 /* -------------------------------------------------------------------------*/
 /* Components */
-.card .card-title {
-  text-transform: uppercase; }
-
 /* -------------------------------------------------------------------------*/
 /* Links */
 /* -------------------------------------------------------------------------*/
@@ -13911,8 +13893,7 @@ h6 {
 .items #secondary-nav li {
   color: #302D3D;
   border-color: #302D3D;
-  font-family: 'kapra-bold';
-  text-transform: uppercase; }
+  font-family: 'Abril Fatface'; }
   .browse .secondary-nav li:hover, .browse #secondary-nav li:hover,
   .tags .secondary-nav li:hover,
   .tags #secondary-nav li:hover,
@@ -14239,7 +14220,7 @@ h6 {
   border-bottom-left-radius: 20px; }
 
 #secondary-header #search-form a {
-  font-family: 'kapra-bold';
+  font-family: 'Abril Fatface';
   font-size: 1.2em; }
 
 #search-container #search-form #submit_search {
@@ -14693,7 +14674,7 @@ body.files .item-file {
           .show > #exhibit-pages.full #secondary-nav > li:nth-child(4) a.dropdown-toggle:focus {
             box-shadow: 0 0 0 0.2rem rgba(48, 45, 61, 0.5); }
     #exhibit-pages.full #secondary-nav .exhibit-title {
-      font-family: "Kapra", sans-serif;
+      font-family: "Abril Fatface", cursive;
       padding: .5em 0; }
       #exhibit-pages.full #secondary-nav .exhibit-title:after {
         content: ":"; }
@@ -14767,7 +14748,7 @@ body.files .item-file {
 
 #generos-nav .btn-obra {
   font-size: 1.6rem;
-  font-family: 'kapra-bold'; }
+  font-family: 'Abril Fatface'; }
 
 #generos-nav .generos-list {
   padding-left: 0; }
@@ -14783,7 +14764,7 @@ body.files .item-file {
       border-color: #7E7EA5; }
   #generos-nav .generos-list .list-group-item {
     font-size: 1.4rem;
-    font-family: 'kapra-bold'; }
+    font-family: 'Abril Fatface'; }
 
 #sidebar .navbar-nav {
   background-color: #CEC0D2;
@@ -14794,9 +14775,8 @@ body.files .item-file {
     border-image: url("../images/separador-menu.png") 0 0 100% 0 stretch;
     text-align: center; }
     #sidebar .navbar-nav .nav-item .nav-link {
-      font-family: 'kapra-bold';
-      font-size: 1.5em;
-      text-transform: uppercase;
+      font-family: 'Abril Fatface';
+      font-size: 1.2em;
       padding-top: 1em;
       padding-bottom: 1em; }
     #sidebar .navbar-nav .nav-item:last-child {
@@ -14804,6 +14784,15 @@ body.files .item-file {
 
 footer {
   border-top: 2px solid black; }
+  footer #footer-logos li {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+    footer #footer-logos li a img {
+      max-width: 200px; }
 
 /* -------------------------------------------------------------------------*/
 /* Screen - Mobile */

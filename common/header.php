@@ -54,17 +54,26 @@
             <div class="col-sm-12">
 
               <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
-              <div id="site-title">
-                  <?php echo link_to_home_page(theme_logo()); ?>
-              </div>
+
 
             </div>
             <?php
               $tags = get_records('Tag',array(), 25);
              ?>
+
+
+            <div class="col-sm-12 mt-4">
+                <?php
+                  $partial = array('common/menu-partial.phtml', 'default');
+                  $nav = public_nav_main();
+                  $nav->setUlClass('navbar-nav')->setPartial($partial);
+                  echo $nav->render();
+                ?>
+            </div>
+
             <div class="col-sm-12 my-4">
               <div class="accordion mx-4" id="generos-nav">
-                  <a class="btn btn-secondary btn-obra w-100" data-toggle="collapse" href="#obra-accordion" role="button" aria-expanded="false" aria-controls="obra-accordion">OBRA</a>
+                  <a class="btn btn-secondary btn-obra w-100" data-toggle="collapse" href="#obra-accordion" role="button" aria-expanded="false" aria-controls="obra-accordion">OBRAS</a>
                   <nav >
                   <ul class="generos-list collapse"  id="obra-accordion">
                     <?php foreach($tags as $key=>$tag): ?>
@@ -77,16 +86,8 @@
                   </ul>
                 </nav>
               </div>
+            </div>
 
-            </div>
-            <div class="col-sm-12">
-                <?php
-                  $partial = array('common/menu-partial.phtml', 'default');
-                  $nav = public_nav_main();
-                  $nav->setUlClass('navbar-nav')->setPartial($partial);
-                  echo $nav->render();
-                ?>
-            </div>
           </div>
       </nav>
 
@@ -101,27 +102,22 @@
                     </button>
                   </div>
                 </div>
-                  <div class="row  header-middle">
-                    <div class="col d-md-none d-lg-block">
-                      <div class="row h-128">
-                        <div class="col sq-margin bg-1"></div>
-                        <div class="col sq-margin bg-2"></div>
-                        <div class="col sq-margin bg-3"></div>
-                        <div class="col sq-margin bg-4" ></div>
-                        <div class="col sq-margin bg-5"></div>
-                        <div class="col sq-margin bg-6"></div>
-                        <div class="col sq-margin bg-7"></div>
-                        <div class="col sq-margin bg-8"></div>
+                <div class="row  header-middle">
+                  <div class="col d-md-none d-lg-block">
+                    <div class="row h-100">
+                      <div id="site-title" class="align-self-center">
+                          <?php echo link_to_home_page(theme_logo()); ?>
                       </div>
                     </div>
-                    <div class="col d-flex align-items-center">
-                      <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
-                      <?php echo nav_search_form(array('show_advanced' => true)); ?>
-                      <?php else: ?>
-                      <?php echo nav_search_form(); ?>
-                      <?php endif; ?>
-                    </div>
                   </div>
+                  <div class="col d-flex align-items-center">
+                    <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
+                    <?php echo nav_search_form(array('show_advanced' => true)); ?>
+                    <?php else: ?>
+                    <?php echo nav_search_form(); ?>
+                    <?php endif; ?>
+                  </div>
+                </div>
 
               </header>
               <!-- end header -->

@@ -1,4 +1,4 @@
-/* -------------------------------------------------------------------------*/
+'Abril Fatface'/* -------------------------------------------------------------------------*/
 /* Table of Contents
 -- General Styles
 ---- Layout
@@ -70,6 +70,7 @@
    //border: 3px solid $purple-8;
    border-top: 3px solid $purple-8;
    border-bottom: 3px solid $purple-8;
+   height: 250px;
  }
 
 #search-container{
@@ -255,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: $base-line-height * 1.5;
     padding: .5em 0;
     margin:0;
-    color: $grey-medium;
+    color: $primary;
 }
 
 h4, h6 {
@@ -270,13 +271,13 @@ h1 {
     font-size: $spacer * 2.5;
     clear:both;
     word-wrap: break-word;
-    text-transform: uppercase;
+    //text-transform: uppercase;
 }
 
 h2 {
     font-size: $spacer * 2;
     //text-transform: capitalize;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     //border-top: 4px solid $grey-light;
 }
 
@@ -291,21 +292,24 @@ h6 {
 #site-title {
     color:$primary;
     font-family: $font-family-title;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     font-size: $base-font-size * 2;
     font-weight: bold;
     line-height: $base-line-height * 2;
-    margin: 40px 20px 20px 20px;
+    //margin: 40px 20px 20px 20px;
     padding: 20px;
+
     a{
       text-decoration:none;
       color:$primary;
       img{
-        max-width: 100%;
-        height: auto;
+        //max-width: 100%;
+        width: auto;
+        height: 100%;
+        vertical-align: bottom;
       }
     }
-    border-bottom: 1px solid $primary;
+    //border-bottom: 1px solid $primary;
 
 }
 
@@ -399,7 +403,7 @@ h6 {
 
 .card{
   .card-title{
-    text-transform: uppercase;
+    //text-transform: uppercase;
   }
 }
 
@@ -450,8 +454,8 @@ h6 {
           //display: inline-block;
           @extend .btn;
           @include button-outline-variant($primary, $color-hover: $primary, $active-background: color-yiq($primary), $active-border: $primary);
-          font-family: 'kapra-bold';
-          text-transform: uppercase;
+          font-family: 'Abril Fatface';
+          //text-transform: uppercase;
         }
 }
 
@@ -699,7 +703,7 @@ h6 {
       border-bottom-left-radius: 20px;
     }
     a{
-      font-family: 'kapra-bold';
+      font-family: 'Abril Fatface';
       font-size: 1.2em;
     }
   }
@@ -1308,14 +1312,14 @@ body.files .item-file {
 #generos-nav{
   .btn-obra{
     font-size: $spacer * 1.6;
-    font-family: 'kapra-bold';
+    font-family: 'Abril Fatface';
   }
   .generos-list{
     @include list-group-item-variant('collapsed', $purple-nav, $purple-4);
     padding-left:0;
     .list-group-item{
       font-size: $spacer * 1.4;
-      font-family: 'kapra-bold';
+      font-family: 'Abril Fatface';
     }
   }
 }
@@ -1329,9 +1333,10 @@ body.files .item-file {
     padding-left: 1em;
     .nav-item{
       .nav-link{
-        font-family: 'kapra-bold';
-        font-size: 1.5em;
-        text-transform: uppercase;
+        //font-family: 'kapra-bold';
+        font-family: 'Abril Fatface';
+        font-size: 1.2em;
+        //text-transform: uppercase;
         padding-top: 1em;
         padding-bottom: 1em;
       }
@@ -1348,4 +1353,19 @@ body.files .item-file {
 
 footer{
   border-top: 2px solid black;
+  #footer-logos{
+    li{
+      padding-left: $spacer * 2;
+      padding-right: $spacer * 2;
+      display: flex;
+      align-items: center;
+      a{
+
+        img{
+          max-width: 200px;
+        }
+      }
+    }
+
+  }
 }
