@@ -383,6 +383,10 @@ h6 {
   min-height: 32px;
 }
 
+.h-70{
+  height: 70px;
+  min-height: 70px;
+}
 .h-64{
   height: 64px;
   min-height: 64px;
@@ -404,6 +408,9 @@ h6 {
 .card{
   .card-title{
     //text-transform: uppercase;
+  }
+  .card-date{
+    font-family: 'Open Sans';
   }
 }
 
@@ -457,6 +464,11 @@ h6 {
           font-family: 'Abril Fatface';
           //text-transform: uppercase;
         }
+    .tags{
+      a{
+        font-family: 'Abril Fatface';
+      }
+    }
 }
 
 .pagination{
@@ -1348,9 +1360,19 @@ body.files .item-file {
       }
     }
   }
+  #close-sidebar{
+    cursor: pointer;
+    span{
+      font-size: $spacer*3;
+    }
+  }
 }
 
-
+#sidebarCollapse{
+  span{
+    font-size: $spacer*3;
+  }
+}
 footer{
   border-top: 2px solid black;
   #footer-logos{
@@ -1362,7 +1384,8 @@ footer{
       a{
 
         img{
-          max-width: 200px;
+          max-width: 128px;
+          max-height: 96px;
         }
       }
     }

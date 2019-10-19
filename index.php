@@ -1,6 +1,8 @@
 <?php
 $featuredExhibit = exhibit_builder_random_featured_exhibit();
 //$biografia = get_record('Item', array( 'advanced' => array( array('element_id' => 'Identifier', 'type' => 'is exactly', 'terms' => 'biografia_sas' )) ));
+
+$home_text = get_theme_option('Homepage Text');
  ?>
 
 <?php echo head(array('bodyid'=>'home')); ?>
@@ -24,8 +26,24 @@ $featuredExhibit = exhibit_builder_random_featured_exhibit();
     </div>
   </div>
 
+<?php else: ?>
+  <div class="col-sm-12 col-md-4">
+    <div class="card border-0">
+      <h2 class="my-5 border-primary border-bottom">Sobre el proyecto</h2>
+      <img src="<?php echo hero_image_path() ?>" class="card-img-top" alt="">
+      <div class="card-body">
+        <p class="card-text">
+          <?php if ($home_text){
+              echo $home_text;
+            }
+          ?>
+        </p>
+        <?php  ?>
+        <?php echo link_to('acerca', NULL, 'leer más', array('class'=> 'btn btn-outline-primary')); ?>
+      </div>
+    </div>
+  </div>
 <?php endif; ?>
-
 
   <?php if (get_theme_option('Display Featured Collection') !== '0'): ?>
 

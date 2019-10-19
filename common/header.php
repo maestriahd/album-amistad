@@ -48,19 +48,19 @@
       <nav class="sidebar container-fluid sticky-top" id="sidebar">
 
           <div class="row">
-            <div class="col-sm-12 sidebar-upper">
-
+            <div class="col-sm-12 sidebar-upper d-flex justify-content-end align-items-center">
+              <div id="close-sidebar" class="float-right">
+                <span class="lnr lnr-cross"></spacing>
+              </div>
             </div>
             <div class="col-sm-12">
 
               <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
 
-
             </div>
             <?php
               $tags = get_records('Tag',array(), 25);
              ?>
-
 
             <div class="col-sm-12 mt-4">
                 <?php
@@ -96,9 +96,9 @@
               <!-- header -->
               <header class="container-fluid" id="secondary-header">
                 <div class="row">
-                  <div class="col d-flex align-items-center p-3">
-                    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" class="btn btn-outline-primary float-right" id="sidebarCollapse">
-                      <i class="fa fa-bars" aria-hidden="true"></i>
+                  <div class="col d-flex align-items-center p-3 h-70">
+                    <button class="btn d-none" type="button" data-toggle="collapse" class="btn btn-outline-primary float-right" id="sidebarCollapse">
+                      <span class="lnr lnr-menu" aria-hidden="true"></span>
                     </button>
                   </div>
                 </div>

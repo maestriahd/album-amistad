@@ -27,7 +27,12 @@ if (jQuery) {
             }, 500);
 
             $('#sidebarCollapse').on('click', function () {
-              $('#sidebar').toggleClass('active');
+              $('#sidebar').removeClass('active');
+              $(this).addClass('d-none');
+            });
+            $('#close-sidebar').on('click', function () {
+              $('#sidebar').addClass('active');
+              $('#sidebarCollapse').removeClass('d-none');
             });
           });
 

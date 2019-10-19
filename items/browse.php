@@ -49,7 +49,7 @@ echo head(array('title' => $pageTitle, 'bodyclass' => 'items browse'));
           <?php $date = metadata($item, array('Dublin Core', 'Date')); ?>
 
           <?php if ($date): ?>
-              <h5 class="card-subtitle"><?php echo $date; ?></h5>
+              <p class="card-date"><?php echo $date; ?><p/>
           <?php endif; ?>
 
         <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' => $item)); ?>
