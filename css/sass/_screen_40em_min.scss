@@ -276,8 +276,8 @@ div#contribution-type-form div.inputs {
 }
 .exhibits.show {
     #secondary-nav.exhibit-page-nav li {
-        float: left;
-        margin-top: .5em;
+        //float: left;
+        //margin-top: .5em;
         ul li {
             width: auto;
         }
@@ -285,13 +285,13 @@ div#contribution-type-form div.inputs {
     #exhibit-page-navigation {
         #exhibit-nav-next,
         #exhibit-nav-prev {
-            width: 50%;
+            //width: 50%;
         }
         #exhibit-nav-up {
-            clear: both;
-            width: 33%;
+            //clear: both;
+            //width: 33%;
             .current-page {
-                clear: none;
+                //clear: none;
             }
         }
     }

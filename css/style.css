@@ -2206,7 +2206,8 @@ textarea.form-control {
 .items #secondary-nav li, .pagination .pagination_next a,
 .pagination .pagination_previous a,
 .pagination .previous-page a,
-.pagination .next-page a, #sort-links li a, .show #output-format-list li a, #exhibit-pages.full #secondary-nav ul li a, #exhibit-pages.full #secondary-nav > li:nth-child(3) a, #exhibit-pages.full #secondary-nav > li:nth-child(4) a {
+.pagination .next-page a, #sort-links li a, .show #output-format-list li a, #exhibit-pages.full #secondary-nav ul li a, #exhibit-pages.full #secondary-nav > li:nth-child(3) a, #exhibit-pages.full #secondary-nav > li:nth-child(4) a, #exhibit-page-navigation #exhibit-nav-next a,
+#exhibit-page-navigation #exhibit-nav-prev a {
   display: inline-block;
   font-weight: 400;
   color: #212529;
@@ -2231,7 +2232,8 @@ textarea.form-control {
     .items #secondary-nav li, .pagination .pagination_next a,
     .pagination .pagination_previous a,
     .pagination .previous-page a,
-    .pagination .next-page a, #sort-links li a, .show #output-format-list li a, #exhibit-pages.full #secondary-nav ul li a, #exhibit-pages.full #secondary-nav > li:nth-child(3) a, #exhibit-pages.full #secondary-nav > li:nth-child(4) a {
+    .pagination .next-page a, #sort-links li a, .show #output-format-list li a, #exhibit-pages.full #secondary-nav ul li a, #exhibit-pages.full #secondary-nav > li:nth-child(3) a, #exhibit-pages.full #secondary-nav > li:nth-child(4) a, #exhibit-page-navigation #exhibit-nav-next a,
+    #exhibit-page-navigation #exhibit-nav-prev a {
       transition: none; } }
   .btn:hover, .browse .secondary-nav li:hover, .browse #secondary-nav li:hover,
   .tags .secondary-nav li:hover,
@@ -2240,7 +2242,8 @@ textarea.form-control {
   .items #secondary-nav li:hover, .pagination .pagination_next a:hover,
   .pagination .pagination_previous a:hover,
   .pagination .previous-page a:hover,
-  .pagination .next-page a:hover, #sort-links li a:hover, .show #output-format-list li a:hover, #exhibit-pages.full #secondary-nav ul li a:hover, #exhibit-pages.full #secondary-nav > li:nth-child(3) a:hover, #exhibit-pages.full #secondary-nav > li:nth-child(4) a:hover {
+  .pagination .next-page a:hover, #sort-links li a:hover, .show #output-format-list li a:hover, #exhibit-pages.full #secondary-nav ul li a:hover, #exhibit-pages.full #secondary-nav > li:nth-child(3) a:hover, #exhibit-pages.full #secondary-nav > li:nth-child(4) a:hover, #exhibit-page-navigation #exhibit-nav-next a:hover,
+  #exhibit-page-navigation #exhibit-nav-prev a:hover {
     color: #212529;
     text-decoration: none; }
   .btn:focus, .browse .secondary-nav li:focus, .browse #secondary-nav li:focus,
@@ -2250,14 +2253,16 @@ textarea.form-control {
   .items #secondary-nav li:focus, .pagination .pagination_next a:focus,
   .pagination .pagination_previous a:focus,
   .pagination .previous-page a:focus,
-  .pagination .next-page a:focus, #sort-links li a:focus, .show #output-format-list li a:focus, #exhibit-pages.full #secondary-nav ul li a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(3) a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(4) a:focus, .btn.focus, .browse .secondary-nav li.focus, .browse #secondary-nav li.focus,
+  .pagination .next-page a:focus, #sort-links li a:focus, .show #output-format-list li a:focus, #exhibit-pages.full #secondary-nav ul li a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(3) a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(4) a:focus, #exhibit-page-navigation #exhibit-nav-next a:focus,
+  #exhibit-page-navigation #exhibit-nav-prev a:focus, .btn.focus, .browse .secondary-nav li.focus, .browse #secondary-nav li.focus,
   .tags .secondary-nav li.focus,
   .tags #secondary-nav li.focus,
   .items .secondary-nav li.focus,
   .items #secondary-nav li.focus, .pagination .pagination_next a.focus,
   .pagination .pagination_previous a.focus,
   .pagination .previous-page a.focus,
-  .pagination .next-page a.focus, #sort-links li a.focus, .show #output-format-list li a.focus, #exhibit-pages.full #secondary-nav ul li a.focus, #exhibit-pages.full #secondary-nav > li:nth-child(3) a.focus, #exhibit-pages.full #secondary-nav > li:nth-child(4) a.focus {
+  .pagination .next-page a.focus, #sort-links li a.focus, .show #output-format-list li a.focus, #exhibit-pages.full #secondary-nav ul li a.focus, #exhibit-pages.full #secondary-nav > li:nth-child(3) a.focus, #exhibit-pages.full #secondary-nav > li:nth-child(4) a.focus, #exhibit-page-navigation #exhibit-nav-next a.focus,
+  #exhibit-page-navigation #exhibit-nav-prev a.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(48, 45, 61, 0.25); }
   .btn.disabled, .browse .secondary-nav li.disabled, .browse #secondary-nav li.disabled,
@@ -2267,20 +2272,23 @@ textarea.form-control {
   .items #secondary-nav li.disabled, .pagination .pagination_next a.disabled,
   .pagination .pagination_previous a.disabled,
   .pagination .previous-page a.disabled,
-  .pagination .next-page a.disabled, #sort-links li a.disabled, .show #output-format-list li a.disabled, #exhibit-pages.full #secondary-nav ul li a.disabled, #exhibit-pages.full #secondary-nav > li:nth-child(3) a.disabled, #exhibit-pages.full #secondary-nav > li:nth-child(4) a.disabled, .btn:disabled, .browse .secondary-nav li:disabled, .browse #secondary-nav li:disabled,
+  .pagination .next-page a.disabled, #sort-links li a.disabled, .show #output-format-list li a.disabled, #exhibit-pages.full #secondary-nav ul li a.disabled, #exhibit-pages.full #secondary-nav > li:nth-child(3) a.disabled, #exhibit-pages.full #secondary-nav > li:nth-child(4) a.disabled, #exhibit-page-navigation #exhibit-nav-next a.disabled,
+  #exhibit-page-navigation #exhibit-nav-prev a.disabled, .btn:disabled, .browse .secondary-nav li:disabled, .browse #secondary-nav li:disabled,
   .tags .secondary-nav li:disabled,
   .tags #secondary-nav li:disabled,
   .items .secondary-nav li:disabled,
   .items #secondary-nav li:disabled, .pagination .pagination_next a:disabled,
   .pagination .pagination_previous a:disabled,
   .pagination .previous-page a:disabled,
-  .pagination .next-page a:disabled, #sort-links li a:disabled, .show #output-format-list li a:disabled, #exhibit-pages.full #secondary-nav ul li a:disabled, #exhibit-pages.full #secondary-nav > li:nth-child(3) a:disabled, #exhibit-pages.full #secondary-nav > li:nth-child(4) a:disabled {
+  .pagination .next-page a:disabled, #sort-links li a:disabled, .show #output-format-list li a:disabled, #exhibit-pages.full #secondary-nav ul li a:disabled, #exhibit-pages.full #secondary-nav > li:nth-child(3) a:disabled, #exhibit-pages.full #secondary-nav > li:nth-child(4) a:disabled, #exhibit-page-navigation #exhibit-nav-next a:disabled,
+  #exhibit-page-navigation #exhibit-nav-prev a:disabled {
     opacity: 0.65; }
 
 a.btn.disabled, .pagination .pagination_next a.disabled,
 .pagination .pagination_previous a.disabled,
 .pagination .previous-page a.disabled,
-.pagination .next-page a.disabled, #sort-links li a.disabled, .show #output-format-list li a.disabled, #exhibit-pages.full #secondary-nav ul li a.disabled, #exhibit-pages.full #secondary-nav > li:nth-child(3) a.disabled, #exhibit-pages.full #secondary-nav > li:nth-child(4) a.disabled,
+.pagination .next-page a.disabled, #sort-links li a.disabled, .show #output-format-list li a.disabled, #exhibit-pages.full #secondary-nav ul li a.disabled, #exhibit-pages.full #secondary-nav > li:nth-child(3) a.disabled, #exhibit-pages.full #secondary-nav > li:nth-child(4) a.disabled, #exhibit-page-navigation #exhibit-nav-next a.disabled,
+#exhibit-page-navigation #exhibit-nav-prev a.disabled,
 fieldset:disabled a.btn,
 fieldset:disabled .pagination .pagination_next a, .pagination .pagination_next
 fieldset:disabled a,
@@ -2305,6 +2313,12 @@ fieldset:disabled a,
 fieldset:disabled #exhibit-pages.full #secondary-nav > li:nth-child(3) a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
 fieldset:disabled a,
 fieldset:disabled #exhibit-pages.full #secondary-nav > li:nth-child(4) a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+fieldset:disabled a,
+fieldset:disabled #exhibit-page-navigation #exhibit-nav-next a, #exhibit-page-navigation #exhibit-nav-next
+fieldset:disabled a,
+fieldset:disabled
+#exhibit-page-navigation #exhibit-nav-prev a,
+#exhibit-page-navigation #exhibit-nav-prev
 fieldset:disabled a {
   pointer-events: none; }
 
@@ -2681,7 +2695,8 @@ fieldset:disabled a {
 .items #secondary-nav .btn-group-lg > li, .pagination .pagination_next .btn-group-lg > a,
 .pagination .pagination_previous .btn-group-lg > a,
 .pagination .previous-page .btn-group-lg > a,
-.pagination .next-page .btn-group-lg > a, #sort-links li .btn-group-lg > a, .show #output-format-list li .btn-group-lg > a, #exhibit-pages.full #secondary-nav ul li .btn-group-lg > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-lg > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-lg > a {
+.pagination .next-page .btn-group-lg > a, #sort-links li .btn-group-lg > a, .show #output-format-list li .btn-group-lg > a, #exhibit-pages.full #secondary-nav ul li .btn-group-lg > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-lg > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-lg > a, #exhibit-page-navigation #exhibit-nav-next .btn-group-lg > a,
+#exhibit-page-navigation #exhibit-nav-prev .btn-group-lg > a {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -2694,7 +2709,8 @@ fieldset:disabled a {
 .items #secondary-nav .btn-group-sm > li, .pagination .pagination_next .btn-group-sm > a,
 .pagination .pagination_previous .btn-group-sm > a,
 .pagination .previous-page .btn-group-sm > a,
-.pagination .next-page .btn-group-sm > a, #sort-links li .btn-group-sm > a, .show #output-format-list li .btn-group-sm > a, #exhibit-pages.full #secondary-nav ul li .btn-group-sm > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-sm > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-sm > a {
+.pagination .next-page .btn-group-sm > a, #sort-links li .btn-group-sm > a, .show #output-format-list li .btn-group-sm > a, #exhibit-pages.full #secondary-nav ul li .btn-group-sm > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-sm > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-sm > a, #exhibit-page-navigation #exhibit-nav-next .btn-group-sm > a,
+#exhibit-page-navigation #exhibit-nav-prev .btn-group-sm > a {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2946,7 +2962,8 @@ input[type="button"].btn-block {
   .items #secondary-nav .btn-group > li, .pagination .pagination_next .btn-group > a,
   .pagination .pagination_previous .btn-group > a,
   .pagination .previous-page .btn-group > a,
-  .pagination .next-page .btn-group > a, #sort-links li .btn-group > a, .show #output-format-list li .btn-group > a, #exhibit-pages.full #secondary-nav ul li .btn-group > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a,
+  .pagination .next-page .btn-group > a, #sort-links li .btn-group > a, .show #output-format-list li .btn-group > a, #exhibit-pages.full #secondary-nav ul li .btn-group > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a, #exhibit-page-navigation #exhibit-nav-next .btn-group > a,
+  #exhibit-page-navigation #exhibit-nav-prev .btn-group > a,
   .btn-group-vertical > .btn, .browse .secondary-nav
   .btn-group-vertical > li, .browse #secondary-nav
   .btn-group-vertical > li,
@@ -2969,6 +2986,9 @@ input[type="button"].btn-block {
   .btn-group-vertical > a, #exhibit-pages.full #secondary-nav ul li
   .btn-group-vertical > a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
   .btn-group-vertical > a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .btn-group-vertical > a, #exhibit-page-navigation #exhibit-nav-next
+  .btn-group-vertical > a,
+  #exhibit-page-navigation #exhibit-nav-prev
   .btn-group-vertical > a {
     position: relative;
     -ms-flex: 1 1 auto;
@@ -2980,7 +3000,8 @@ input[type="button"].btn-block {
     .items #secondary-nav .btn-group > li:hover, .pagination .pagination_next .btn-group > a:hover,
     .pagination .pagination_previous .btn-group > a:hover,
     .pagination .previous-page .btn-group > a:hover,
-    .pagination .next-page .btn-group > a:hover, #sort-links li .btn-group > a:hover, .show #output-format-list li .btn-group > a:hover, #exhibit-pages.full #secondary-nav ul li .btn-group > a:hover, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a:hover, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a:hover,
+    .pagination .next-page .btn-group > a:hover, #sort-links li .btn-group > a:hover, .show #output-format-list li .btn-group > a:hover, #exhibit-pages.full #secondary-nav ul li .btn-group > a:hover, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a:hover, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a:hover, #exhibit-page-navigation #exhibit-nav-next .btn-group > a:hover,
+    #exhibit-page-navigation #exhibit-nav-prev .btn-group > a:hover,
     .btn-group-vertical > .btn:hover, .browse .secondary-nav
     .btn-group-vertical > li:hover, .browse #secondary-nav
     .btn-group-vertical > li:hover,
@@ -3003,6 +3024,9 @@ input[type="button"].btn-block {
     .btn-group-vertical > a:hover, #exhibit-pages.full #secondary-nav ul li
     .btn-group-vertical > a:hover, #exhibit-pages.full #secondary-nav > li:nth-child(3)
     .btn-group-vertical > a:hover, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+    .btn-group-vertical > a:hover, #exhibit-page-navigation #exhibit-nav-next
+    .btn-group-vertical > a:hover,
+    #exhibit-page-navigation #exhibit-nav-prev
     .btn-group-vertical > a:hover {
       z-index: 1; }
     .btn-group > .btn:focus, .browse .secondary-nav .btn-group > li:focus, .browse #secondary-nav .btn-group > li:focus,
@@ -3012,21 +3036,24 @@ input[type="button"].btn-block {
     .items #secondary-nav .btn-group > li:focus, .pagination .pagination_next .btn-group > a:focus,
     .pagination .pagination_previous .btn-group > a:focus,
     .pagination .previous-page .btn-group > a:focus,
-    .pagination .next-page .btn-group > a:focus, #sort-links li .btn-group > a:focus, .show #output-format-list li .btn-group > a:focus, #exhibit-pages.full #secondary-nav ul li .btn-group > a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a:focus, .btn-group > .btn:active, .browse .secondary-nav .btn-group > li:active, .browse #secondary-nav .btn-group > li:active,
+    .pagination .next-page .btn-group > a:focus, #sort-links li .btn-group > a:focus, .show #output-format-list li .btn-group > a:focus, #exhibit-pages.full #secondary-nav ul li .btn-group > a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a:focus, #exhibit-page-navigation #exhibit-nav-next .btn-group > a:focus,
+    #exhibit-page-navigation #exhibit-nav-prev .btn-group > a:focus, .btn-group > .btn:active, .browse .secondary-nav .btn-group > li:active, .browse #secondary-nav .btn-group > li:active,
     .tags .secondary-nav .btn-group > li:active,
     .tags #secondary-nav .btn-group > li:active,
     .items .secondary-nav .btn-group > li:active,
     .items #secondary-nav .btn-group > li:active, .pagination .pagination_next .btn-group > a:active,
     .pagination .pagination_previous .btn-group > a:active,
     .pagination .previous-page .btn-group > a:active,
-    .pagination .next-page .btn-group > a:active, #sort-links li .btn-group > a:active, .show #output-format-list li .btn-group > a:active, #exhibit-pages.full #secondary-nav ul li .btn-group > a:active, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a:active, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a:active, .btn-group > .btn.active, .browse .secondary-nav .btn-group > li.active, .browse #secondary-nav .btn-group > li.active,
+    .pagination .next-page .btn-group > a:active, #sort-links li .btn-group > a:active, .show #output-format-list li .btn-group > a:active, #exhibit-pages.full #secondary-nav ul li .btn-group > a:active, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a:active, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a:active, #exhibit-page-navigation #exhibit-nav-next .btn-group > a:active,
+    #exhibit-page-navigation #exhibit-nav-prev .btn-group > a:active, .btn-group > .btn.active, .browse .secondary-nav .btn-group > li.active, .browse #secondary-nav .btn-group > li.active,
     .tags .secondary-nav .btn-group > li.active,
     .tags #secondary-nav .btn-group > li.active,
     .items .secondary-nav .btn-group > li.active,
     .items #secondary-nav .btn-group > li.active, .pagination .pagination_next .btn-group > a.active,
     .pagination .pagination_previous .btn-group > a.active,
     .pagination .previous-page .btn-group > a.active,
-    .pagination .next-page .btn-group > a.active, #sort-links li .btn-group > a.active, .show #output-format-list li .btn-group > a.active, #exhibit-pages.full #secondary-nav ul li .btn-group > a.active, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a.active, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a.active,
+    .pagination .next-page .btn-group > a.active, #sort-links li .btn-group > a.active, .show #output-format-list li .btn-group > a.active, #exhibit-pages.full #secondary-nav ul li .btn-group > a.active, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a.active, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a.active, #exhibit-page-navigation #exhibit-nav-next .btn-group > a.active,
+    #exhibit-page-navigation #exhibit-nav-prev .btn-group > a.active,
     .btn-group-vertical > .btn:focus, .browse .secondary-nav
     .btn-group-vertical > li:focus, .browse #secondary-nav
     .btn-group-vertical > li:focus,
@@ -3049,6 +3076,9 @@ input[type="button"].btn-block {
     .btn-group-vertical > a:focus, #exhibit-pages.full #secondary-nav ul li
     .btn-group-vertical > a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(3)
     .btn-group-vertical > a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+    .btn-group-vertical > a:focus, #exhibit-page-navigation #exhibit-nav-next
+    .btn-group-vertical > a:focus,
+    #exhibit-page-navigation #exhibit-nav-prev
     .btn-group-vertical > a:focus,
     .btn-group-vertical > .btn:active, .browse .secondary-nav
     .btn-group-vertical > li:active, .browse #secondary-nav
@@ -3072,6 +3102,9 @@ input[type="button"].btn-block {
     .btn-group-vertical > a:active, #exhibit-pages.full #secondary-nav ul li
     .btn-group-vertical > a:active, #exhibit-pages.full #secondary-nav > li:nth-child(3)
     .btn-group-vertical > a:active, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+    .btn-group-vertical > a:active, #exhibit-page-navigation #exhibit-nav-next
+    .btn-group-vertical > a:active,
+    #exhibit-page-navigation #exhibit-nav-prev
     .btn-group-vertical > a:active,
     .btn-group-vertical > .btn.active, .browse .secondary-nav
     .btn-group-vertical > li.active, .browse #secondary-nav
@@ -3095,6 +3128,9 @@ input[type="button"].btn-block {
     .btn-group-vertical > a.active, #exhibit-pages.full #secondary-nav ul li
     .btn-group-vertical > a.active, #exhibit-pages.full #secondary-nav > li:nth-child(3)
     .btn-group-vertical > a.active, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+    .btn-group-vertical > a.active, #exhibit-page-navigation #exhibit-nav-next
+    .btn-group-vertical > a.active,
+    #exhibit-page-navigation #exhibit-nav-prev
     .btn-group-vertical > a.active {
       z-index: 1; }
 
@@ -3115,7 +3151,8 @@ input[type="button"].btn-block {
 .items #secondary-nav .btn-group > li:not(:first-child), .pagination .pagination_next .btn-group > a:not(:first-child),
 .pagination .pagination_previous .btn-group > a:not(:first-child),
 .pagination .previous-page .btn-group > a:not(:first-child),
-.pagination .next-page .btn-group > a:not(:first-child), #sort-links li .btn-group > a:not(:first-child), .show #output-format-list li .btn-group > a:not(:first-child), #exhibit-pages.full #secondary-nav ul li .btn-group > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a:not(:first-child),
+.pagination .next-page .btn-group > a:not(:first-child), #sort-links li .btn-group > a:not(:first-child), .show #output-format-list li .btn-group > a:not(:first-child), #exhibit-pages.full #secondary-nav ul li .btn-group > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a:not(:first-child), #exhibit-page-navigation #exhibit-nav-next .btn-group > a:not(:first-child),
+#exhibit-page-navigation #exhibit-nav-prev .btn-group > a:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px; }
 
@@ -3126,7 +3163,8 @@ input[type="button"].btn-block {
 .items #secondary-nav .btn-group > li:not(:last-child):not(.dropdown-toggle), .pagination .pagination_next .btn-group > a:not(:last-child):not(.dropdown-toggle),
 .pagination .pagination_previous .btn-group > a:not(:last-child):not(.dropdown-toggle),
 .pagination .previous-page .btn-group > a:not(:last-child):not(.dropdown-toggle),
-.pagination .next-page .btn-group > a:not(:last-child):not(.dropdown-toggle), #sort-links li .btn-group > a:not(:last-child):not(.dropdown-toggle), .show #output-format-list li .btn-group > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav ul li .btn-group > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a:not(:last-child):not(.dropdown-toggle),
+.pagination .next-page .btn-group > a:not(:last-child):not(.dropdown-toggle), #sort-links li .btn-group > a:not(:last-child):not(.dropdown-toggle), .show #output-format-list li .btn-group > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav ul li .btn-group > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a:not(:last-child):not(.dropdown-toggle), #exhibit-page-navigation #exhibit-nav-next .btn-group > a:not(:last-child):not(.dropdown-toggle),
+#exhibit-page-navigation #exhibit-nav-prev .btn-group > a:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn, .browse .secondary-nav
 .btn-group > .btn-group:not(:last-child) > li, .browse #secondary-nav
 .btn-group > .btn-group:not(:last-child) > li,
@@ -3149,6 +3187,9 @@ input[type="button"].btn-block {
 .btn-group > .btn-group:not(:last-child) > a, #exhibit-pages.full #secondary-nav ul li
 .btn-group > .btn-group:not(:last-child) > a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
 .btn-group > .btn-group:not(:last-child) > a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+.btn-group > .btn-group:not(:last-child) > a, #exhibit-page-navigation #exhibit-nav-next
+.btn-group > .btn-group:not(:last-child) > a,
+#exhibit-page-navigation #exhibit-nav-prev
 .btn-group > .btn-group:not(:last-child) > a {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
@@ -3160,7 +3201,8 @@ input[type="button"].btn-block {
 .items #secondary-nav .btn-group > li:not(:first-child), .pagination .pagination_next .btn-group > a:not(:first-child),
 .pagination .pagination_previous .btn-group > a:not(:first-child),
 .pagination .previous-page .btn-group > a:not(:first-child),
-.pagination .next-page .btn-group > a:not(:first-child), #sort-links li .btn-group > a:not(:first-child), .show #output-format-list li .btn-group > a:not(:first-child), #exhibit-pages.full #secondary-nav ul li .btn-group > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a:not(:first-child),
+.pagination .next-page .btn-group > a:not(:first-child), #sort-links li .btn-group > a:not(:first-child), .show #output-format-list li .btn-group > a:not(:first-child), #exhibit-pages.full #secondary-nav ul li .btn-group > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group > a:not(:first-child), #exhibit-page-navigation #exhibit-nav-next .btn-group > a:not(:first-child),
+#exhibit-page-navigation #exhibit-nav-prev .btn-group > a:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn, .browse .secondary-nav
 .btn-group > .btn-group:not(:first-child) > li, .browse #secondary-nav
 .btn-group > .btn-group:not(:first-child) > li,
@@ -3183,6 +3225,9 @@ input[type="button"].btn-block {
 .btn-group > .btn-group:not(:first-child) > a, #exhibit-pages.full #secondary-nav ul li
 .btn-group > .btn-group:not(:first-child) > a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
 .btn-group > .btn-group:not(:first-child) > a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+.btn-group > .btn-group:not(:first-child) > a, #exhibit-page-navigation #exhibit-nav-next
+.btn-group > .btn-group:not(:first-child) > a,
+#exhibit-page-navigation #exhibit-nav-prev
 .btn-group > .btn-group:not(:first-child) > a {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
@@ -3204,7 +3249,8 @@ input[type="button"].btn-block {
 .items #secondary-nav .btn-group-sm > li + .dropdown-toggle-split, .pagination .pagination_next .btn-group-sm > a + .dropdown-toggle-split,
 .pagination .pagination_previous .btn-group-sm > a + .dropdown-toggle-split,
 .pagination .previous-page .btn-group-sm > a + .dropdown-toggle-split,
-.pagination .next-page .btn-group-sm > a + .dropdown-toggle-split, #sort-links li .btn-group-sm > a + .dropdown-toggle-split, .show #output-format-list li .btn-group-sm > a + .dropdown-toggle-split, #exhibit-pages.full #secondary-nav ul li .btn-group-sm > a + .dropdown-toggle-split, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-sm > a + .dropdown-toggle-split, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-sm > a + .dropdown-toggle-split {
+.pagination .next-page .btn-group-sm > a + .dropdown-toggle-split, #sort-links li .btn-group-sm > a + .dropdown-toggle-split, .show #output-format-list li .btn-group-sm > a + .dropdown-toggle-split, #exhibit-pages.full #secondary-nav ul li .btn-group-sm > a + .dropdown-toggle-split, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-sm > a + .dropdown-toggle-split, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-sm > a + .dropdown-toggle-split, #exhibit-page-navigation #exhibit-nav-next .btn-group-sm > a + .dropdown-toggle-split,
+#exhibit-page-navigation #exhibit-nav-prev .btn-group-sm > a + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
@@ -3215,7 +3261,8 @@ input[type="button"].btn-block {
 .items #secondary-nav .btn-group-lg > li + .dropdown-toggle-split, .pagination .pagination_next .btn-group-lg > a + .dropdown-toggle-split,
 .pagination .pagination_previous .btn-group-lg > a + .dropdown-toggle-split,
 .pagination .previous-page .btn-group-lg > a + .dropdown-toggle-split,
-.pagination .next-page .btn-group-lg > a + .dropdown-toggle-split, #sort-links li .btn-group-lg > a + .dropdown-toggle-split, .show #output-format-list li .btn-group-lg > a + .dropdown-toggle-split, #exhibit-pages.full #secondary-nav ul li .btn-group-lg > a + .dropdown-toggle-split, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-lg > a + .dropdown-toggle-split, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-lg > a + .dropdown-toggle-split {
+.pagination .next-page .btn-group-lg > a + .dropdown-toggle-split, #sort-links li .btn-group-lg > a + .dropdown-toggle-split, .show #output-format-list li .btn-group-lg > a + .dropdown-toggle-split, #exhibit-pages.full #secondary-nav ul li .btn-group-lg > a + .dropdown-toggle-split, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-lg > a + .dropdown-toggle-split, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-lg > a + .dropdown-toggle-split, #exhibit-page-navigation #exhibit-nav-next .btn-group-lg > a + .dropdown-toggle-split,
+#exhibit-page-navigation #exhibit-nav-prev .btn-group-lg > a + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -3233,7 +3280,8 @@ input[type="button"].btn-block {
   .items #secondary-nav .btn-group-vertical > li, .pagination .pagination_next .btn-group-vertical > a,
   .pagination .pagination_previous .btn-group-vertical > a,
   .pagination .previous-page .btn-group-vertical > a,
-  .pagination .next-page .btn-group-vertical > a, #sort-links li .btn-group-vertical > a, .show #output-format-list li .btn-group-vertical > a, #exhibit-pages.full #secondary-nav ul li .btn-group-vertical > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-vertical > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-vertical > a,
+  .pagination .next-page .btn-group-vertical > a, #sort-links li .btn-group-vertical > a, .show #output-format-list li .btn-group-vertical > a, #exhibit-pages.full #secondary-nav ul li .btn-group-vertical > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-vertical > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-vertical > a, #exhibit-page-navigation #exhibit-nav-next .btn-group-vertical > a,
+  #exhibit-page-navigation #exhibit-nav-prev .btn-group-vertical > a,
   .btn-group-vertical > .btn-group {
     width: 100%; }
   .btn-group-vertical > .btn:not(:first-child), .browse .secondary-nav .btn-group-vertical > li:not(:first-child), .browse #secondary-nav .btn-group-vertical > li:not(:first-child),
@@ -3243,7 +3291,8 @@ input[type="button"].btn-block {
   .items #secondary-nav .btn-group-vertical > li:not(:first-child), .pagination .pagination_next .btn-group-vertical > a:not(:first-child),
   .pagination .pagination_previous .btn-group-vertical > a:not(:first-child),
   .pagination .previous-page .btn-group-vertical > a:not(:first-child),
-  .pagination .next-page .btn-group-vertical > a:not(:first-child), #sort-links li .btn-group-vertical > a:not(:first-child), .show #output-format-list li .btn-group-vertical > a:not(:first-child), #exhibit-pages.full #secondary-nav ul li .btn-group-vertical > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-vertical > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-vertical > a:not(:first-child),
+  .pagination .next-page .btn-group-vertical > a:not(:first-child), #sort-links li .btn-group-vertical > a:not(:first-child), .show #output-format-list li .btn-group-vertical > a:not(:first-child), #exhibit-pages.full #secondary-nav ul li .btn-group-vertical > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-vertical > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-vertical > a:not(:first-child), #exhibit-page-navigation #exhibit-nav-next .btn-group-vertical > a:not(:first-child),
+  #exhibit-page-navigation #exhibit-nav-prev .btn-group-vertical > a:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) {
     margin-top: -1px; }
   .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .browse .secondary-nav .btn-group-vertical > li:not(:last-child):not(.dropdown-toggle), .browse #secondary-nav .btn-group-vertical > li:not(:last-child):not(.dropdown-toggle),
@@ -3253,7 +3302,8 @@ input[type="button"].btn-block {
   .items #secondary-nav .btn-group-vertical > li:not(:last-child):not(.dropdown-toggle), .pagination .pagination_next .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
   .pagination .pagination_previous .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
   .pagination .previous-page .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
-  .pagination .next-page .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), #sort-links li .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), .show #output-format-list li .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav ul li .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
+  .pagination .next-page .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), #sort-links li .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), .show #output-format-list li .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav ul li .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle), #exhibit-page-navigation #exhibit-nav-next .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
+  #exhibit-page-navigation #exhibit-nav-prev .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
   .btn-group-vertical > .btn-group:not(:last-child) > .btn, .browse .secondary-nav
   .btn-group-vertical > .btn-group:not(:last-child) > li, .browse #secondary-nav
   .btn-group-vertical > .btn-group:not(:last-child) > li,
@@ -3276,6 +3326,9 @@ input[type="button"].btn-block {
   .btn-group-vertical > .btn-group:not(:last-child) > a, #exhibit-pages.full #secondary-nav ul li
   .btn-group-vertical > .btn-group:not(:last-child) > a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
   .btn-group-vertical > .btn-group:not(:last-child) > a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .btn-group-vertical > .btn-group:not(:last-child) > a, #exhibit-page-navigation #exhibit-nav-next
+  .btn-group-vertical > .btn-group:not(:last-child) > a,
+  #exhibit-page-navigation #exhibit-nav-prev
   .btn-group-vertical > .btn-group:not(:last-child) > a {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
@@ -3286,7 +3339,8 @@ input[type="button"].btn-block {
   .items #secondary-nav .btn-group-vertical > li:not(:first-child), .pagination .pagination_next .btn-group-vertical > a:not(:first-child),
   .pagination .pagination_previous .btn-group-vertical > a:not(:first-child),
   .pagination .previous-page .btn-group-vertical > a:not(:first-child),
-  .pagination .next-page .btn-group-vertical > a:not(:first-child), #sort-links li .btn-group-vertical > a:not(:first-child), .show #output-format-list li .btn-group-vertical > a:not(:first-child), #exhibit-pages.full #secondary-nav ul li .btn-group-vertical > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-vertical > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-vertical > a:not(:first-child),
+  .pagination .next-page .btn-group-vertical > a:not(:first-child), #sort-links li .btn-group-vertical > a:not(:first-child), .show #output-format-list li .btn-group-vertical > a:not(:first-child), #exhibit-pages.full #secondary-nav ul li .btn-group-vertical > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-vertical > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-vertical > a:not(:first-child), #exhibit-page-navigation #exhibit-nav-next .btn-group-vertical > a:not(:first-child),
+  #exhibit-page-navigation #exhibit-nav-prev .btn-group-vertical > a:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) > .btn, .browse .secondary-nav
   .btn-group-vertical > .btn-group:not(:first-child) > li, .browse #secondary-nav
   .btn-group-vertical > .btn-group:not(:first-child) > li,
@@ -3309,6 +3363,9 @@ input[type="button"].btn-block {
   .btn-group-vertical > .btn-group:not(:first-child) > a, #exhibit-pages.full #secondary-nav ul li
   .btn-group-vertical > .btn-group:not(:first-child) > a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
   .btn-group-vertical > .btn-group:not(:first-child) > a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .btn-group-vertical > .btn-group:not(:first-child) > a, #exhibit-page-navigation #exhibit-nav-next
+  .btn-group-vertical > .btn-group:not(:first-child) > a,
+  #exhibit-page-navigation #exhibit-nav-prev
   .btn-group-vertical > .btn-group:not(:first-child) > a {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
@@ -3320,7 +3377,8 @@ input[type="button"].btn-block {
 .items #secondary-nav .btn-group-toggle > li, .pagination .pagination_next .btn-group-toggle > a,
 .pagination .pagination_previous .btn-group-toggle > a,
 .pagination .previous-page .btn-group-toggle > a,
-.pagination .next-page .btn-group-toggle > a, #sort-links li .btn-group-toggle > a, .show #output-format-list li .btn-group-toggle > a, #exhibit-pages.full #secondary-nav ul li .btn-group-toggle > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-toggle > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-toggle > a,
+.pagination .next-page .btn-group-toggle > a, #sort-links li .btn-group-toggle > a, .show #output-format-list li .btn-group-toggle > a, #exhibit-pages.full #secondary-nav ul li .btn-group-toggle > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-toggle > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-toggle > a, #exhibit-page-navigation #exhibit-nav-next .btn-group-toggle > a,
+#exhibit-page-navigation #exhibit-nav-prev .btn-group-toggle > a,
 .btn-group-toggle > .btn-group > .btn, .browse .secondary-nav
 .btn-group-toggle > .btn-group > li, .browse #secondary-nav
 .btn-group-toggle > .btn-group > li,
@@ -3343,6 +3401,9 @@ input[type="button"].btn-block {
 .btn-group-toggle > .btn-group > a, #exhibit-pages.full #secondary-nav ul li
 .btn-group-toggle > .btn-group > a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
 .btn-group-toggle > .btn-group > a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+.btn-group-toggle > .btn-group > a, #exhibit-page-navigation #exhibit-nav-next
+.btn-group-toggle > .btn-group > a,
+#exhibit-page-navigation #exhibit-nav-prev
 .btn-group-toggle > .btn-group > a {
   margin-bottom: 0; }
   .btn-group-toggle > .btn input[type="radio"], .browse .secondary-nav .btn-group-toggle > li input[type="radio"], .browse #secondary-nav .btn-group-toggle > li input[type="radio"],
@@ -3352,7 +3413,8 @@ input[type="button"].btn-block {
   .items #secondary-nav .btn-group-toggle > li input[type="radio"], .pagination .pagination_next .btn-group-toggle > a input[type="radio"],
   .pagination .pagination_previous .btn-group-toggle > a input[type="radio"],
   .pagination .previous-page .btn-group-toggle > a input[type="radio"],
-  .pagination .next-page .btn-group-toggle > a input[type="radio"], #sort-links li .btn-group-toggle > a input[type="radio"], .show #output-format-list li .btn-group-toggle > a input[type="radio"], #exhibit-pages.full #secondary-nav ul li .btn-group-toggle > a input[type="radio"], #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-toggle > a input[type="radio"], #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-toggle > a input[type="radio"],
+  .pagination .next-page .btn-group-toggle > a input[type="radio"], #sort-links li .btn-group-toggle > a input[type="radio"], .show #output-format-list li .btn-group-toggle > a input[type="radio"], #exhibit-pages.full #secondary-nav ul li .btn-group-toggle > a input[type="radio"], #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn-group-toggle > a input[type="radio"], #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn-group-toggle > a input[type="radio"], #exhibit-page-navigation #exhibit-nav-next .btn-group-toggle > a input[type="radio"],
+  #exhibit-page-navigation #exhibit-nav-prev .btn-group-toggle > a input[type="radio"],
   .btn-group-toggle > .btn input[type="checkbox"], .browse .secondary-nav
   .btn-group-toggle > li input[type="checkbox"], .browse #secondary-nav
   .btn-group-toggle > li input[type="checkbox"],
@@ -3375,6 +3437,9 @@ input[type="button"].btn-block {
   .btn-group-toggle > a input[type="checkbox"], #exhibit-pages.full #secondary-nav ul li
   .btn-group-toggle > a input[type="checkbox"], #exhibit-pages.full #secondary-nav > li:nth-child(3)
   .btn-group-toggle > a input[type="checkbox"], #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .btn-group-toggle > a input[type="checkbox"], #exhibit-page-navigation #exhibit-nav-next
+  .btn-group-toggle > a input[type="checkbox"],
+  #exhibit-page-navigation #exhibit-nav-prev
   .btn-group-toggle > a input[type="checkbox"],
   .btn-group-toggle > .btn-group > .btn input[type="radio"], .browse .secondary-nav
   .btn-group-toggle > .btn-group > li input[type="radio"], .browse #secondary-nav
@@ -3398,6 +3463,9 @@ input[type="button"].btn-block {
   .btn-group-toggle > .btn-group > a input[type="radio"], #exhibit-pages.full #secondary-nav ul li
   .btn-group-toggle > .btn-group > a input[type="radio"], #exhibit-pages.full #secondary-nav > li:nth-child(3)
   .btn-group-toggle > .btn-group > a input[type="radio"], #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .btn-group-toggle > .btn-group > a input[type="radio"], #exhibit-page-navigation #exhibit-nav-next
+  .btn-group-toggle > .btn-group > a input[type="radio"],
+  #exhibit-page-navigation #exhibit-nav-prev
   .btn-group-toggle > .btn-group > a input[type="radio"],
   .btn-group-toggle > .btn-group > .btn input[type="checkbox"], .browse .secondary-nav
   .btn-group-toggle > .btn-group > li input[type="checkbox"], .browse #secondary-nav
@@ -3421,6 +3489,9 @@ input[type="button"].btn-block {
   .btn-group-toggle > .btn-group > a input[type="checkbox"], #exhibit-pages.full #secondary-nav ul li
   .btn-group-toggle > .btn-group > a input[type="checkbox"], #exhibit-pages.full #secondary-nav > li:nth-child(3)
   .btn-group-toggle > .btn-group > a input[type="checkbox"], #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .btn-group-toggle > .btn-group > a input[type="checkbox"], #exhibit-page-navigation #exhibit-nav-next
+  .btn-group-toggle > .btn-group > a input[type="checkbox"],
+  #exhibit-page-navigation #exhibit-nav-prev
   .btn-group-toggle > .btn-group > a input[type="checkbox"] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
@@ -3502,7 +3573,9 @@ input[type="button"].btn-block {
   .pagination .previous-page a,
   .pagination .previous-page .input-group-prepend a, .input-group-prepend
   .pagination .next-page a,
-  .pagination .next-page .input-group-prepend a, .input-group-prepend #sort-links li a, #sort-links li .input-group-prepend a, .input-group-prepend .show #output-format-list li a, .show #output-format-list li .input-group-prepend a, .input-group-prepend #exhibit-pages.full #secondary-nav ul li a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a,
+  .pagination .next-page .input-group-prepend a, .input-group-prepend #sort-links li a, #sort-links li .input-group-prepend a, .input-group-prepend .show #output-format-list li a, .show #output-format-list li .input-group-prepend a, .input-group-prepend #exhibit-pages.full #secondary-nav ul li a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a,
   .input-group-append .btn,
   .input-group-append .browse .secondary-nav li, .browse .secondary-nav
   .input-group-append li,
@@ -3547,6 +3620,12 @@ input[type="button"].btn-block {
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(3) a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
   .input-group-append a,
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a,
+  #exhibit-page-navigation #exhibit-nav-prev
   .input-group-append a {
     position: relative;
     z-index: 2; }
@@ -3564,7 +3643,9 @@ input[type="button"].btn-block {
     .pagination .previous-page a:focus,
     .pagination .previous-page .input-group-prepend a:focus, .input-group-prepend
     .pagination .next-page a:focus,
-    .pagination .next-page .input-group-prepend a:focus, .input-group-prepend #sort-links li a:focus, #sort-links li .input-group-prepend a:focus, .input-group-prepend .show #output-format-list li a:focus, .show #output-format-list li .input-group-prepend a:focus, .input-group-prepend #exhibit-pages.full #secondary-nav ul li a:focus, #exhibit-pages.full #secondary-nav ul li .input-group-prepend a:focus, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a:focus, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a:focus,
+    .pagination .next-page .input-group-prepend a:focus, .input-group-prepend #sort-links li a:focus, #sort-links li .input-group-prepend a:focus, .input-group-prepend .show #output-format-list li a:focus, .show #output-format-list li .input-group-prepend a:focus, .input-group-prepend #exhibit-pages.full #secondary-nav ul li a:focus, #exhibit-pages.full #secondary-nav ul li .input-group-prepend a:focus, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a:focus, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a:focus, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a:focus, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a:focus, .input-group-prepend
+    #exhibit-page-navigation #exhibit-nav-prev a:focus,
+    #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a:focus,
     .input-group-append .btn:focus,
     .input-group-append .browse .secondary-nav li:focus, .browse .secondary-nav
     .input-group-append li:focus,
@@ -3609,6 +3690,12 @@ input[type="button"].btn-block {
     .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(3) a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(3)
     .input-group-append a:focus,
     .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a:focus, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+    .input-group-append a:focus,
+    .input-group-append #exhibit-page-navigation #exhibit-nav-next a:focus, #exhibit-page-navigation #exhibit-nav-next
+    .input-group-append a:focus,
+    .input-group-append
+    #exhibit-page-navigation #exhibit-nav-prev a:focus,
+    #exhibit-page-navigation #exhibit-nav-prev
     .input-group-append a:focus {
       z-index: 3; }
   .input-group-prepend .btn + .btn, .input-group-prepend .browse .secondary-nav li + .btn, .browse .secondary-nav .input-group-prepend li + .btn, .input-group-prepend .browse #secondary-nav li + .btn, .browse #secondary-nav .input-group-prepend li + .btn, .input-group-prepend
@@ -3625,7 +3712,9 @@ input[type="button"].btn-block {
   .pagination .previous-page a + .btn,
   .pagination .previous-page .input-group-prepend a + .btn, .input-group-prepend
   .pagination .next-page a + .btn,
-  .pagination .next-page .input-group-prepend a + .btn, .input-group-prepend #sort-links li a + .btn, #sort-links li .input-group-prepend a + .btn, .input-group-prepend .show #output-format-list li a + .btn, .show #output-format-list li .input-group-prepend a + .btn, .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + .btn, #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + .btn, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + .btn, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + .btn, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + .btn, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + .btn, .input-group-prepend .browse .secondary-nav .btn + li, .browse .secondary-nav .input-group-prepend .btn + li, .input-group-prepend .browse .secondary-nav li + li, .browse .secondary-nav .input-group-prepend li + li, .input-group-prepend .browse #secondary-nav .secondary-nav li + li, .input-group-prepend .browse .secondary-nav #secondary-nav li + li, .browse #secondary-nav .input-group-prepend .secondary-nav li + li, .browse .secondary-nav #secondary-nav .input-group-prepend li + li, .input-group-prepend
+  .pagination .next-page .input-group-prepend a + .btn, .input-group-prepend #sort-links li a + .btn, #sort-links li .input-group-prepend a + .btn, .input-group-prepend .show #output-format-list li a + .btn, .show #output-format-list li .input-group-prepend a + .btn, .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + .btn, #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + .btn, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + .btn, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + .btn, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + .btn, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + .btn, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + .btn, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + .btn, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + .btn,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + .btn, .input-group-prepend .browse .secondary-nav .btn + li, .browse .secondary-nav .input-group-prepend .btn + li, .input-group-prepend .browse .secondary-nav li + li, .browse .secondary-nav .input-group-prepend li + li, .input-group-prepend .browse #secondary-nav .secondary-nav li + li, .input-group-prepend .browse .secondary-nav #secondary-nav li + li, .browse #secondary-nav .input-group-prepend .secondary-nav li + li, .browse .secondary-nav #secondary-nav .input-group-prepend li + li, .input-group-prepend
   .tags .browse .secondary-nav li + li, .browse .input-group-prepend
   .tags .secondary-nav li + li,
   .tags .browse .secondary-nav .input-group-prepend li + li, .browse
@@ -3653,7 +3742,11 @@ input[type="button"].btn-block {
   .pagination .next-page .browse .secondary-nav a + li, .browse .secondary-nav .input-group-prepend
   .pagination .next-page a + li,
   .pagination .next-page .input-group-prepend .browse .secondary-nav a + li, .browse .secondary-nav
-  .pagination .next-page .input-group-prepend a + li, .input-group-prepend #sort-links li .browse .secondary-nav a + li, .browse .secondary-nav .input-group-prepend #sort-links li a + li, #sort-links li .input-group-prepend .browse .secondary-nav a + li, .browse .secondary-nav #sort-links li .input-group-prepend a + li, .input-group-prepend .show #output-format-list li .browse .secondary-nav a + li, .browse .secondary-nav .input-group-prepend .show #output-format-list li a + li, .show #output-format-list li .input-group-prepend .browse .secondary-nav a + li, .browse .secondary-nav .show #output-format-list li .input-group-prepend a + li, .input-group-prepend #exhibit-pages.full #secondary-nav ul li .browse .secondary-nav a + li, .browse .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + li, #exhibit-pages.full #secondary-nav ul li .input-group-prepend .browse .secondary-nav a + li, .browse .secondary-nav #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + li, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) .browse .secondary-nav a + li, .browse .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + li, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend .browse .secondary-nav a + li, .browse .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + li, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) .browse .secondary-nav a + li, .browse .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + li, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend .browse .secondary-nav a + li, .browse .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .input-group-prepend .browse #secondary-nav .btn + li, .browse #secondary-nav .input-group-prepend .btn + li, .input-group-prepend .browse .secondary-nav #secondary-nav li + li, .input-group-prepend .browse #secondary-nav .secondary-nav li + li, .browse .secondary-nav .input-group-prepend #secondary-nav li + li, .browse #secondary-nav .secondary-nav .input-group-prepend li + li, .input-group-prepend .browse #secondary-nav li + li, .browse #secondary-nav .input-group-prepend li + li, .input-group-prepend
+  .pagination .next-page .input-group-prepend a + li, .input-group-prepend #sort-links li .browse .secondary-nav a + li, .browse .secondary-nav .input-group-prepend #sort-links li a + li, #sort-links li .input-group-prepend .browse .secondary-nav a + li, .browse .secondary-nav #sort-links li .input-group-prepend a + li, .input-group-prepend .show #output-format-list li .browse .secondary-nav a + li, .browse .secondary-nav .input-group-prepend .show #output-format-list li a + li, .show #output-format-list li .input-group-prepend .browse .secondary-nav a + li, .browse .secondary-nav .show #output-format-list li .input-group-prepend a + li, .input-group-prepend #exhibit-pages.full #secondary-nav ul li .browse .secondary-nav a + li, .browse .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + li, #exhibit-pages.full #secondary-nav ul li .input-group-prepend .browse .secondary-nav a + li, .browse .secondary-nav #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + li, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) .browse .secondary-nav a + li, .browse .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + li, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend .browse .secondary-nav a + li, .browse .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + li, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) .browse .secondary-nav a + li, .browse .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + li, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend .browse .secondary-nav a + li, .browse .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next .browse .secondary-nav a + li, .browse .secondary-nav .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + li, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend .browse .secondary-nav a + li, .browse .secondary-nav #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + li, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev .browse .secondary-nav a + li, .browse .secondary-nav .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + li,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend .browse .secondary-nav a + li, .browse .secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + li, .input-group-prepend .browse #secondary-nav .btn + li, .browse #secondary-nav .input-group-prepend .btn + li, .input-group-prepend .browse .secondary-nav #secondary-nav li + li, .input-group-prepend .browse #secondary-nav .secondary-nav li + li, .browse .secondary-nav .input-group-prepend #secondary-nav li + li, .browse #secondary-nav .secondary-nav .input-group-prepend li + li, .input-group-prepend .browse #secondary-nav li + li, .browse #secondary-nav .input-group-prepend li + li, .input-group-prepend
   .tags .secondary-nav .browse #secondary-nav li + li, .browse #secondary-nav .input-group-prepend
   .tags .secondary-nav li + li,
   .tags .secondary-nav .input-group-prepend .browse #secondary-nav li + li, .browse #secondary-nav
@@ -3681,7 +3774,11 @@ input[type="button"].btn-block {
   .pagination .next-page .browse #secondary-nav a + li, .browse #secondary-nav .input-group-prepend
   .pagination .next-page a + li,
   .pagination .next-page .input-group-prepend .browse #secondary-nav a + li, .browse #secondary-nav
-  .pagination .next-page .input-group-prepend a + li, .input-group-prepend #sort-links li .browse #secondary-nav a + li, .browse #secondary-nav .input-group-prepend #sort-links li a + li, #sort-links li .input-group-prepend .browse #secondary-nav a + li, .browse #secondary-nav #sort-links li .input-group-prepend a + li, .input-group-prepend .show #output-format-list li .browse #secondary-nav a + li, .browse #secondary-nav .input-group-prepend .show #output-format-list li a + li, .show #output-format-list li .input-group-prepend .browse #secondary-nav a + li, .browse #secondary-nav .show #output-format-list li .input-group-prepend a + li, .input-group-prepend #exhibit-pages.full .browse #secondary-nav ul li a + li, .browse .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + li, #exhibit-pages.full .browse #secondary-nav ul li .input-group-prepend a + li, .browse #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + li, .input-group-prepend #exhibit-pages.full .browse #secondary-nav > li:nth-child(3) a + li, .browse .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + li, #exhibit-pages.full .browse #secondary-nav > li:nth-child(3) .input-group-prepend a + li, .browse #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + li, .input-group-prepend #exhibit-pages.full .browse #secondary-nav > li:nth-child(4) a + li, .browse .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + li, #exhibit-pages.full .browse #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .browse #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .input-group-prepend
+  .pagination .next-page .input-group-prepend a + li, .input-group-prepend #sort-links li .browse #secondary-nav a + li, .browse #secondary-nav .input-group-prepend #sort-links li a + li, #sort-links li .input-group-prepend .browse #secondary-nav a + li, .browse #secondary-nav #sort-links li .input-group-prepend a + li, .input-group-prepend .show #output-format-list li .browse #secondary-nav a + li, .browse #secondary-nav .input-group-prepend .show #output-format-list li a + li, .show #output-format-list li .input-group-prepend .browse #secondary-nav a + li, .browse #secondary-nav .show #output-format-list li .input-group-prepend a + li, .input-group-prepend #exhibit-pages.full .browse #secondary-nav ul li a + li, .browse .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + li, #exhibit-pages.full .browse #secondary-nav ul li .input-group-prepend a + li, .browse #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + li, .input-group-prepend #exhibit-pages.full .browse #secondary-nav > li:nth-child(3) a + li, .browse .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + li, #exhibit-pages.full .browse #secondary-nav > li:nth-child(3) .input-group-prepend a + li, .browse #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + li, .input-group-prepend #exhibit-pages.full .browse #secondary-nav > li:nth-child(4) a + li, .browse .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + li, #exhibit-pages.full .browse #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .browse #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next .browse #secondary-nav a + li, .browse #secondary-nav .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + li, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend .browse #secondary-nav a + li, .browse #secondary-nav #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + li, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev .browse #secondary-nav a + li, .browse #secondary-nav .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + li,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend .browse #secondary-nav a + li, .browse #secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + li, .input-group-prepend
   .tags .secondary-nav .btn + li,
   .tags .secondary-nav .input-group-prepend .btn + li, .input-group-prepend .browse
   .tags .secondary-nav li + li,
@@ -3755,7 +3852,19 @@ input[type="button"].btn-block {
   .tags .secondary-nav a + li,
   .tags .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + li, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend
   .tags .secondary-nav a + li,
-  .tags .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .input-group-prepend
+  .tags .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next
+  .tags .secondary-nav a + li,
+  .tags .secondary-nav .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + li, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .tags .secondary-nav a + li,
+  .tags .secondary-nav #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + li, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev
+  .tags .secondary-nav a + li,
+  .tags .secondary-nav .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + li,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .tags .secondary-nav a + li,
+  .tags .secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + li, .input-group-prepend
   .tags #secondary-nav .btn + li,
   .tags #secondary-nav .input-group-prepend .btn + li, .input-group-prepend .browse .secondary-nav
   .tags #secondary-nav li + li,
@@ -3829,7 +3938,19 @@ input[type="button"].btn-block {
   .tags #secondary-nav > li:nth-child(4) a + li,
   .tags .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + li, #exhibit-pages.full
   .tags #secondary-nav > li:nth-child(4) .input-group-prepend a + li,
-  .tags #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .input-group-prepend
+  .tags #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next
+  .tags #secondary-nav a + li,
+  .tags #secondary-nav .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + li, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .tags #secondary-nav a + li,
+  .tags #secondary-nav #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + li, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev
+  .tags #secondary-nav a + li,
+  .tags #secondary-nav .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + li,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .tags #secondary-nav a + li,
+  .tags #secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + li, .input-group-prepend
   .items .secondary-nav .btn + li,
   .items .secondary-nav .input-group-prepend .btn + li, .input-group-prepend .browse
   .items .secondary-nav li + li,
@@ -3903,7 +4024,19 @@ input[type="button"].btn-block {
   .items .secondary-nav a + li,
   .items .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + li, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend
   .items .secondary-nav a + li,
-  .items .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .input-group-prepend
+  .items .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next
+  .items .secondary-nav a + li,
+  .items .secondary-nav .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + li, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .items .secondary-nav a + li,
+  .items .secondary-nav #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + li, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev
+  .items .secondary-nav a + li,
+  .items .secondary-nav .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + li,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .items .secondary-nav a + li,
+  .items .secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + li, .input-group-prepend
   .items #secondary-nav .btn + li,
   .items #secondary-nav .input-group-prepend .btn + li, .input-group-prepend .browse .secondary-nav
   .items #secondary-nav li + li,
@@ -3977,7 +4110,19 @@ input[type="button"].btn-block {
   .items #secondary-nav > li:nth-child(4) a + li,
   .items .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + li, #exhibit-pages.full
   .items #secondary-nav > li:nth-child(4) .input-group-prepend a + li,
-  .items #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .input-group-prepend .pagination .pagination_next .btn + a, .pagination .pagination_next .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav .pagination .pagination_next li + a, .pagination .pagination_next .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend .pagination .pagination_next li + a, .pagination .pagination_next .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #secondary-nav .pagination .pagination_next li + a, .pagination .pagination_next .input-group-prepend .browse #secondary-nav li + a, .browse #secondary-nav .input-group-prepend .pagination .pagination_next li + a, .pagination .pagination_next .browse #secondary-nav .input-group-prepend li + a, .input-group-prepend
+  .items #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + li, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next
+  .items #secondary-nav a + li,
+  .items #secondary-nav .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + li, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .items #secondary-nav a + li,
+  .items #secondary-nav #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + li, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev
+  .items #secondary-nav a + li,
+  .items #secondary-nav .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + li,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .items #secondary-nav a + li,
+  .items #secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + li, .input-group-prepend .pagination .pagination_next .btn + a, .pagination .pagination_next .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav .pagination .pagination_next li + a, .pagination .pagination_next .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend .pagination .pagination_next li + a, .pagination .pagination_next .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #secondary-nav .pagination .pagination_next li + a, .pagination .pagination_next .input-group-prepend .browse #secondary-nav li + a, .browse #secondary-nav .input-group-prepend .pagination .pagination_next li + a, .pagination .pagination_next .browse #secondary-nav .input-group-prepend li + a, .input-group-prepend
   .tags .secondary-nav .pagination .pagination_next li + a, .pagination .pagination_next .input-group-prepend
   .tags .secondary-nav li + a,
   .tags .secondary-nav .input-group-prepend .pagination .pagination_next li + a, .pagination .pagination_next
@@ -3993,7 +4138,11 @@ input[type="button"].btn-block {
   .items #secondary-nav .pagination .pagination_next li + a, .pagination .pagination_next .input-group-prepend
   .items #secondary-nav li + a,
   .items #secondary-nav .input-group-prepend .pagination .pagination_next li + a, .pagination .pagination_next
-  .items #secondary-nav .input-group-prepend li + a, .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend a + a, .input-group-prepend .pagination .pagination_previous .pagination_next a + a, .input-group-prepend .pagination .pagination_next .pagination_previous a + a, .pagination .pagination_previous .input-group-prepend .pagination_next a + a, .pagination .pagination_next .pagination_previous .input-group-prepend a + a, .input-group-prepend .pagination .previous-page .pagination_next a + a, .input-group-prepend .pagination .pagination_next .previous-page a + a, .pagination .previous-page .input-group-prepend .pagination_next a + a, .pagination .pagination_next .previous-page .input-group-prepend a + a, .input-group-prepend .pagination .next-page .pagination_next a + a, .input-group-prepend .pagination .pagination_next .next-page a + a, .pagination .next-page .input-group-prepend .pagination_next a + a, .pagination .pagination_next .next-page .input-group-prepend a + a, .input-group-prepend #sort-links li .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend #sort-links li a + a, #sort-links li .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next #sort-links li .input-group-prepend a + a, .input-group-prepend .show #output-format-list li .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend .show #output-format-list li a + a, .show #output-format-list li .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next .show #output-format-list li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav ul li .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend
+  .items #secondary-nav .input-group-prepend li + a, .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend a + a, .input-group-prepend .pagination .pagination_previous .pagination_next a + a, .input-group-prepend .pagination .pagination_next .pagination_previous a + a, .pagination .pagination_previous .input-group-prepend .pagination_next a + a, .pagination .pagination_next .pagination_previous .input-group-prepend a + a, .input-group-prepend .pagination .previous-page .pagination_next a + a, .input-group-prepend .pagination .pagination_next .previous-page a + a, .pagination .previous-page .input-group-prepend .pagination_next a + a, .pagination .pagination_next .previous-page .input-group-prepend a + a, .input-group-prepend .pagination .next-page .pagination_next a + a, .input-group-prepend .pagination .pagination_next .next-page a + a, .pagination .next-page .input-group-prepend .pagination_next a + a, .pagination .pagination_next .next-page .input-group-prepend a + a, .input-group-prepend #sort-links li .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend #sort-links li a + a, #sort-links li .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next #sort-links li .input-group-prepend a + a, .input-group-prepend .show #output-format-list li .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend .show #output-format-list li a + a, .show #output-format-list li .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next .show #output-format-list li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav ul li .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + a, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + a, .input-group-prepend
   .pagination .pagination_previous .btn + a,
   .pagination .pagination_previous .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav
   .pagination .pagination_previous li + a,
@@ -4055,7 +4204,19 @@ input[type="button"].btn-block {
   .pagination .pagination_previous a + a,
   .pagination .pagination_previous .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend
   .pagination .pagination_previous a + a,
-  .pagination .pagination_previous #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend
+  .pagination .pagination_previous #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next
+  .pagination .pagination_previous a + a,
+  .pagination .pagination_previous .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .pagination .pagination_previous a + a,
+  .pagination .pagination_previous #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + a, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev
+  .pagination .pagination_previous a + a,
+  .pagination .pagination_previous .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .pagination .pagination_previous a + a,
+  .pagination .pagination_previous
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + a, .input-group-prepend
   .pagination .previous-page .btn + a,
   .pagination .previous-page .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav
   .pagination .previous-page li + a,
@@ -4117,7 +4278,19 @@ input[type="button"].btn-block {
   .pagination .previous-page a + a,
   .pagination .previous-page .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend
   .pagination .previous-page a + a,
-  .pagination .previous-page #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend
+  .pagination .previous-page #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next
+  .pagination .previous-page a + a,
+  .pagination .previous-page .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .pagination .previous-page a + a,
+  .pagination .previous-page #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + a, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev
+  .pagination .previous-page a + a,
+  .pagination .previous-page .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .pagination .previous-page a + a,
+  .pagination .previous-page
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + a, .input-group-prepend
   .pagination .next-page .btn + a,
   .pagination .next-page .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav
   .pagination .next-page li + a,
@@ -4179,7 +4352,19 @@ input[type="button"].btn-block {
   .pagination .next-page a + a,
   .pagination .next-page .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend
   .pagination .next-page a + a,
-  .pagination .next-page #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend #sort-links li .btn + a, #sort-links li .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav #sort-links li li + a, #sort-links li .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend #sort-links li li + a, #sort-links li .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #secondary-nav #sort-links li li + a, #sort-links li .input-group-prepend .browse #secondary-nav li + a, .browse #secondary-nav .input-group-prepend #sort-links li li + a, #sort-links li .browse #secondary-nav .input-group-prepend li + a, .input-group-prepend
+  .pagination .next-page #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next
+  .pagination .next-page a + a,
+  .pagination .next-page .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .pagination .next-page a + a,
+  .pagination .next-page #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + a, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev
+  .pagination .next-page a + a,
+  .pagination .next-page .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .pagination .next-page a + a,
+  .pagination .next-page
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + a, .input-group-prepend #sort-links li .btn + a, #sort-links li .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav #sort-links li li + a, #sort-links li .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend #sort-links li li + a, #sort-links li .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #secondary-nav #sort-links li li + a, #sort-links li .input-group-prepend .browse #secondary-nav li + a, .browse #secondary-nav .input-group-prepend #sort-links li li + a, #sort-links li .browse #secondary-nav .input-group-prepend li + a, .input-group-prepend
   .tags .secondary-nav #sort-links li li + a, #sort-links li .input-group-prepend
   .tags .secondary-nav li + a,
   .tags .secondary-nav .input-group-prepend #sort-links li li + a, #sort-links li
@@ -4207,7 +4392,11 @@ input[type="button"].btn-block {
   .pagination .next-page #sort-links li a + a, #sort-links li .input-group-prepend
   .pagination .next-page a + a,
   .pagination .next-page .input-group-prepend #sort-links li a + a, #sort-links li
-  .pagination .next-page .input-group-prepend a + a, .input-group-prepend #sort-links li a + a, #sort-links li .input-group-prepend a + a, .input-group-prepend .show #output-format-list #sort-links li a + a, #sort-links .input-group-prepend .show #output-format-list li a + a, .show #output-format-list #sort-links li .input-group-prepend a + a, #sort-links .show #output-format-list li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav ul #sort-links li a + a, #sort-links .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul #sort-links li .input-group-prepend a + a, #sort-links #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #sort-links #secondary-nav > li:nth-child(3) a + a, #sort-links .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #sort-links #secondary-nav > li:nth-child(3) .input-group-prepend a + a, #sort-links #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #sort-links #secondary-nav > li:nth-child(4) a + a, #sort-links .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #sort-links #secondary-nav > li:nth-child(4) .input-group-prepend a + a, #sort-links #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend .show #output-format-list li .btn + a, .show #output-format-list li .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav .show #output-format-list li li + a, .show #output-format-list li .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend .show #output-format-list li li + a, .show #output-format-list li .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #secondary-nav .show #output-format-list li li + a, .show #output-format-list li .input-group-prepend .browse #secondary-nav li + a, .browse #secondary-nav .input-group-prepend .show #output-format-list li li + a, .show #output-format-list li .browse #secondary-nav .input-group-prepend li + a, .input-group-prepend
+  .pagination .next-page .input-group-prepend a + a, .input-group-prepend #sort-links li a + a, #sort-links li .input-group-prepend a + a, .input-group-prepend .show #output-format-list #sort-links li a + a, #sort-links .input-group-prepend .show #output-format-list li a + a, .show #output-format-list #sort-links li .input-group-prepend a + a, #sort-links .show #output-format-list li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav ul #sort-links li a + a, #sort-links .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul #sort-links li .input-group-prepend a + a, #sort-links #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #sort-links #secondary-nav > li:nth-child(3) a + a, #sort-links .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #sort-links #secondary-nav > li:nth-child(3) .input-group-prepend a + a, #sort-links #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #sort-links #secondary-nav > li:nth-child(4) a + a, #sort-links .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #sort-links #secondary-nav > li:nth-child(4) .input-group-prepend a + a, #sort-links #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next #sort-links li a + a, #sort-links li .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend #sort-links li a + a, #sort-links li #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + a, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev #sort-links li a + a, #sort-links li .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend #sort-links li a + a, #sort-links li
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + a, .input-group-prepend .show #output-format-list li .btn + a, .show #output-format-list li .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav .show #output-format-list li li + a, .show #output-format-list li .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend .show #output-format-list li li + a, .show #output-format-list li .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #secondary-nav .show #output-format-list li li + a, .show #output-format-list li .input-group-prepend .browse #secondary-nav li + a, .browse #secondary-nav .input-group-prepend .show #output-format-list li li + a, .show #output-format-list li .browse #secondary-nav .input-group-prepend li + a, .input-group-prepend
   .tags .secondary-nav .show #output-format-list li li + a, .show #output-format-list li .input-group-prepend
   .tags .secondary-nav li + a,
   .tags .secondary-nav .input-group-prepend .show #output-format-list li li + a, .show #output-format-list li
@@ -4235,7 +4424,11 @@ input[type="button"].btn-block {
   .pagination .next-page .show #output-format-list li a + a, .show #output-format-list li .input-group-prepend
   .pagination .next-page a + a,
   .pagination .next-page .input-group-prepend .show #output-format-list li a + a, .show #output-format-list li
-  .pagination .next-page .input-group-prepend a + a, .input-group-prepend #sort-links .show #output-format-list li a + a, .show #output-format-list .input-group-prepend #sort-links li a + a, #sort-links .show #output-format-list li .input-group-prepend a + a, .show #output-format-list #sort-links li .input-group-prepend a + a, .input-group-prepend .show #output-format-list li a + a, .show #output-format-list li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav ul .show #output-format-list li a + a, .show #output-format-list .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul .show #output-format-list li .input-group-prepend a + a, .show #output-format-list #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(3) a + a, .show #output-format-list .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .show #output-format-list #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(4) a + a, .show #output-format-list .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .show #output-format-list #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav ul li .btn + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav #exhibit-pages.full #secondary-nav ul li li + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav ul li li + a, #exhibit-pages.full #secondary-nav ul li .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #exhibit-pages.full #secondary-nav ul li li + a, #exhibit-pages.full .input-group-prepend .browse #secondary-nav ul li li + a, .browse #exhibit-pages.full #secondary-nav .input-group-prepend ul li li + a, #exhibit-pages.full .browse #secondary-nav .input-group-prepend ul li li + a, .browse #exhibit-pages.full #secondary-nav ul li .input-group-prepend li + a, #exhibit-pages.full .browse #secondary-nav ul li .input-group-prepend li + a, .input-group-prepend
+  .pagination .next-page .input-group-prepend a + a, .input-group-prepend #sort-links .show #output-format-list li a + a, .show #output-format-list .input-group-prepend #sort-links li a + a, #sort-links .show #output-format-list li .input-group-prepend a + a, .show #output-format-list #sort-links li .input-group-prepend a + a, .input-group-prepend .show #output-format-list li a + a, .show #output-format-list li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav ul .show #output-format-list li a + a, .show #output-format-list .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul .show #output-format-list li .input-group-prepend a + a, .show #output-format-list #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(3) a + a, .show #output-format-list .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .show #output-format-list #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(4) a + a, .show #output-format-list .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .show #output-format-list #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next .show #output-format-list li a + a, .show #output-format-list li .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend .show #output-format-list li a + a, .show #output-format-list li #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + a, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev .show #output-format-list li a + a, .show #output-format-list li .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend .show #output-format-list li a + a, .show #output-format-list li
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav ul li .btn + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav #exhibit-pages.full #secondary-nav ul li li + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav ul li li + a, #exhibit-pages.full #secondary-nav ul li .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #exhibit-pages.full #secondary-nav ul li li + a, #exhibit-pages.full .input-group-prepend .browse #secondary-nav ul li li + a, .browse #exhibit-pages.full #secondary-nav .input-group-prepend ul li li + a, #exhibit-pages.full .browse #secondary-nav .input-group-prepend ul li li + a, .browse #exhibit-pages.full #secondary-nav ul li .input-group-prepend li + a, #exhibit-pages.full .browse #secondary-nav ul li .input-group-prepend li + a, .input-group-prepend
   .tags .secondary-nav #exhibit-pages.full #secondary-nav ul li li + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend
   .tags .secondary-nav li + a,
   .tags .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav ul li li + a, #exhibit-pages.full #secondary-nav ul li
@@ -4267,7 +4460,11 @@ input[type="button"].btn-block {
   .pagination .next-page #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend
   .pagination .next-page a + a,
   .pagination .next-page .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li
-  .pagination .next-page .input-group-prepend a + a, .input-group-prepend #sort-links #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul .input-group-prepend #sort-links li a + a, #sort-links #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, #exhibit-pages.full #secondary-nav ul #sort-links li .input-group-prepend a + a, .input-group-prepend .show #output-format-list #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul .input-group-prepend .show #output-format-list li a + a, .show #output-format-list #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, #exhibit-pages.full #secondary-nav ul .show #output-format-list li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(3) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #exhibit-pages.full #secondary-nav > li:nth-child(3) li + a, #exhibit-pages.full .input-group-prepend .browse #secondary-nav > li:nth-child(3) li + a, .browse #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend li + a, #exhibit-pages.full .browse #secondary-nav > li:nth-child(3) .input-group-prepend li + a, .input-group-prepend
+  .pagination .next-page .input-group-prepend a + a, .input-group-prepend #sort-links #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul .input-group-prepend #sort-links li a + a, #sort-links #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, #exhibit-pages.full #secondary-nav ul #sort-links li .input-group-prepend a + a, .input-group-prepend .show #output-format-list #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul .input-group-prepend .show #output-format-list li a + a, .show #output-format-list #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, #exhibit-pages.full #secondary-nav ul .show #output-format-list li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) ul li .input-group-prepend a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + a, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(3) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #exhibit-pages.full #secondary-nav > li:nth-child(3) li + a, #exhibit-pages.full .input-group-prepend .browse #secondary-nav > li:nth-child(3) li + a, .browse #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend li + a, #exhibit-pages.full .browse #secondary-nav > li:nth-child(3) .input-group-prepend li + a, .input-group-prepend
   .tags .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(3) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend
   .tags .secondary-nav li + a,
   .tags .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
@@ -4295,7 +4492,11 @@ input[type="button"].btn-block {
   .pagination .next-page #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend
   .pagination .next-page a + a,
   .pagination .next-page .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
-  .pagination .next-page .input-group-prepend a + a, .input-group-prepend #sort-links #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full .input-group-prepend #sort-links #secondary-nav > li:nth-child(3) a + a, #sort-links #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, #exhibit-pages.full #sort-links #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend .show #output-format-list #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full .input-group-prepend .show #output-format-list #secondary-nav > li:nth-child(3) a + a, .show #output-format-list #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend #secondary-nav > li:nth-child(3) a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(4) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #exhibit-pages.full #secondary-nav > li:nth-child(4) li + a, #exhibit-pages.full .input-group-prepend .browse #secondary-nav > li:nth-child(4) li + a, .browse #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend li + a, #exhibit-pages.full .browse #secondary-nav > li:nth-child(4) .input-group-prepend li + a, .input-group-prepend
+  .pagination .next-page .input-group-prepend a + a, .input-group-prepend #sort-links #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full .input-group-prepend #sort-links #secondary-nav > li:nth-child(3) a + a, #sort-links #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, #exhibit-pages.full #sort-links #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend .show #output-format-list #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full .input-group-prepend .show #output-format-list #secondary-nav > li:nth-child(3) a + a, .show #output-format-list #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend #secondary-nav > li:nth-child(3) a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + a, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(4) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #exhibit-pages.full #secondary-nav > li:nth-child(4) li + a, #exhibit-pages.full .input-group-prepend .browse #secondary-nav > li:nth-child(4) li + a, .browse #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend li + a, #exhibit-pages.full .browse #secondary-nav > li:nth-child(4) .input-group-prepend li + a, .input-group-prepend
   .tags .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(4) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend
   .tags .secondary-nav li + a,
   .tags .secondary-nav .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
@@ -4323,7 +4524,129 @@ input[type="button"].btn-block {
   .pagination .next-page #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend
   .pagination .next-page a + a,
   .pagination .next-page .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
-  .pagination .next-page .input-group-prepend a + a, .input-group-prepend #sort-links #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full .input-group-prepend #sort-links #secondary-nav > li:nth-child(4) a + a, #sort-links #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, #exhibit-pages.full #sort-links #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend .show #output-format-list #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full .input-group-prepend .show #output-format-list #secondary-nav > li:nth-child(4) a + a, .show #output-format-list #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend #secondary-nav > li:nth-child(4) a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a,
+  .pagination .next-page .input-group-prepend a + a, .input-group-prepend #sort-links #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full .input-group-prepend #sort-links #secondary-nav > li:nth-child(4) a + a, #sort-links #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, #exhibit-pages.full #sort-links #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend .show #output-format-list #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full .input-group-prepend .show #output-format-list #secondary-nav > li:nth-child(4) a + a, .show #output-format-list #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend #secondary-nav > li:nth-child(4) a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + a, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next .btn + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #secondary-nav #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend .browse #secondary-nav li + a, .browse #secondary-nav .input-group-prepend #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next .browse #secondary-nav .input-group-prepend li + a, .input-group-prepend
+  .tags .secondary-nav #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .tags .secondary-nav li + a,
+  .tags .secondary-nav .input-group-prepend #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .tags .secondary-nav .input-group-prepend li + a, .input-group-prepend
+  .tags #secondary-nav #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .tags #secondary-nav li + a,
+  .tags #secondary-nav .input-group-prepend #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .tags #secondary-nav .input-group-prepend li + a, .input-group-prepend
+  .items .secondary-nav #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .items .secondary-nav li + a,
+  .items .secondary-nav .input-group-prepend #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .items .secondary-nav .input-group-prepend li + a, .input-group-prepend
+  .items #secondary-nav #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .items #secondary-nav li + a,
+  .items #secondary-nav .input-group-prepend #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .items #secondary-nav .input-group-prepend li + a, .input-group-prepend .pagination .pagination_next #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .pagination .pagination_next .input-group-prepend a + a, .input-group-prepend
+  .pagination .pagination_previous #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .pagination .pagination_previous a + a,
+  .pagination .pagination_previous .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .pagination .pagination_previous .input-group-prepend a + a, .input-group-prepend
+  .pagination .previous-page #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .pagination .previous-page a + a,
+  .pagination .previous-page .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .pagination .previous-page .input-group-prepend a + a, .input-group-prepend
+  .pagination .next-page #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend
+  .pagination .next-page a + a,
+  .pagination .next-page .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .pagination .next-page .input-group-prepend a + a, .input-group-prepend #sort-links li #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend #sort-links li a + a, #sort-links li .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next #sort-links li .input-group-prepend a + a, .input-group-prepend .show #output-format-list li #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend .show #output-format-list li a + a, .show #output-format-list li .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .show #output-format-list li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav ul li #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-prev #exhibit-nav-next a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next #exhibit-nav-prev a + a, #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next #exhibit-nav-prev .input-group-prepend a + a, .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev .btn + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend .btn + a, .input-group-prepend .browse .secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend .browse .secondary-nav li + a, .browse .secondary-nav .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev .browse .secondary-nav .input-group-prepend li + a, .input-group-prepend .browse #secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend .browse #secondary-nav li + a, .browse #secondary-nav .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev .browse #secondary-nav .input-group-prepend li + a, .input-group-prepend
+  .tags .secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .tags .secondary-nav li + a,
+  .tags .secondary-nav .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .tags .secondary-nav .input-group-prepend li + a, .input-group-prepend
+  .tags #secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .tags #secondary-nav li + a,
+  .tags #secondary-nav .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .tags #secondary-nav .input-group-prepend li + a, .input-group-prepend
+  .items .secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .items .secondary-nav li + a,
+  .items .secondary-nav .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .items .secondary-nav .input-group-prepend li + a, .input-group-prepend
+  .items #secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .items #secondary-nav li + a,
+  .items #secondary-nav .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .items #secondary-nav .input-group-prepend li + a, .input-group-prepend .pagination .pagination_next
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend .pagination .pagination_next a + a, .pagination .pagination_next .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .pagination .pagination_next .input-group-prepend a + a, .input-group-prepend
+  .pagination .pagination_previous
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .pagination .pagination_previous a + a,
+  .pagination .pagination_previous .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .pagination .pagination_previous .input-group-prepend a + a, .input-group-prepend
+  .pagination .previous-page
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .pagination .previous-page a + a,
+  .pagination .previous-page .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .pagination .previous-page .input-group-prepend a + a, .input-group-prepend
+  .pagination .next-page
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend
+  .pagination .next-page a + a,
+  .pagination .next-page .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .pagination .next-page .input-group-prepend a + a, .input-group-prepend #sort-links li
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend #sort-links li a + a, #sort-links li .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev #sort-links li .input-group-prepend a + a, .input-group-prepend .show #output-format-list li
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend .show #output-format-list li a + a, .show #output-format-list li .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .show #output-format-list li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav ul li
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev #exhibit-pages.full #secondary-nav ul li .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3)
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-prepend a + a, .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-prepend a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-next #exhibit-nav-prev a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-prev #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .input-group-prepend #exhibit-nav-prev a + a, #exhibit-page-navigation #exhibit-nav-prev #exhibit-nav-next .input-group-prepend a + a, .input-group-prepend #exhibit-page-navigation #exhibit-nav-prev a + a, #exhibit-page-navigation #exhibit-nav-prev .input-group-prepend a + a,
   .input-group-prepend .btn + .input-group-text,
   .input-group-prepend .browse .secondary-nav li + .input-group-text, .browse .secondary-nav
   .input-group-prepend li + .input-group-text,
@@ -4368,6 +4691,12 @@ input[type="button"].btn-block {
   .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(3) a + .input-group-text, #exhibit-pages.full #secondary-nav > li:nth-child(3)
   .input-group-prepend a + .input-group-text,
   .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) a + .input-group-text, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-prepend a + .input-group-text,
+  .input-group-prepend #exhibit-page-navigation #exhibit-nav-next a + .input-group-text, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-prepend a + .input-group-text,
+  .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev a + .input-group-text,
+  #exhibit-page-navigation #exhibit-nav-prev
   .input-group-prepend a + .input-group-text,
   .input-group-prepend .input-group-text + .input-group-text,
   .input-group-prepend .input-group-text + .btn,
@@ -4415,6 +4744,12 @@ input[type="button"].btn-block {
   .input-group-prepend .input-group-text + a,
   .input-group-prepend #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-text + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-prepend .input-group-text + a,
+  .input-group-prepend #exhibit-page-navigation #exhibit-nav-next .input-group-text + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-prepend .input-group-text + a,
+  .input-group-prepend
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-text + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-prepend .input-group-text + a,
   .input-group-append .btn + .btn,
   .input-group-append .browse .secondary-nav li + .btn, .browse .secondary-nav
   .input-group-append li + .btn,
@@ -4459,6 +4794,12 @@ input[type="button"].btn-block {
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(3) a + .btn, #exhibit-pages.full #secondary-nav > li:nth-child(3)
   .input-group-append a + .btn,
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a + .btn, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append a + .btn,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + .btn, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + .btn,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + .btn,
+  #exhibit-page-navigation #exhibit-nav-prev
   .input-group-append a + .btn,
   .input-group-append .browse .secondary-nav .btn + li, .browse .secondary-nav
   .input-group-append .btn + li,
@@ -4548,6 +4889,18 @@ input[type="button"].btn-block {
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a + li, #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-append .browse .secondary-nav a + li, .browse .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-append a + li,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next .browse .secondary-nav a + li, .browse .secondary-nav
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + li, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append .browse .secondary-nav a + li, .browse .secondary-nav #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + li,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev .browse .secondary-nav a + li, .browse .secondary-nav
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + li,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append .browse .secondary-nav a + li, .browse .secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append a + li,
   .input-group-append .browse #secondary-nav .btn + li, .browse #secondary-nav
   .input-group-append .btn + li,
   .input-group-append .browse .secondary-nav #secondary-nav li + li,
@@ -4635,6 +4988,18 @@ input[type="button"].btn-block {
   .input-group-append #exhibit-pages.full .browse #secondary-nav > li:nth-child(4) a + li, .browse
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a + li, #exhibit-pages.full .browse #secondary-nav > li:nth-child(4)
   .input-group-append a + li, .browse #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append a + li,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next .browse #secondary-nav a + li, .browse #secondary-nav
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + li, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append .browse #secondary-nav a + li, .browse #secondary-nav #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + li,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev .browse #secondary-nav a + li, .browse #secondary-nav
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + li,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append .browse #secondary-nav a + li, .browse #secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev
   .input-group-append a + li,
   .input-group-append
   .tags .secondary-nav .btn + li,
@@ -4770,6 +5135,26 @@ input[type="button"].btn-block {
   .tags .secondary-nav a + li,
   .tags .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-append a + li,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next
+  .tags .secondary-nav a + li,
+  .tags .secondary-nav
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + li, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .tags .secondary-nav a + li,
+  .tags .secondary-nav #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + li,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev
+  .tags .secondary-nav a + li,
+  .tags .secondary-nav
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + li,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .tags .secondary-nav a + li,
+  .tags .secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append a + li,
   .input-group-append
   .tags #secondary-nav .btn + li,
   .tags #secondary-nav
@@ -4903,6 +5288,26 @@ input[type="button"].btn-block {
   .tags #secondary-nav > li:nth-child(4)
   .input-group-append a + li,
   .tags #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append a + li,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next
+  .tags #secondary-nav a + li,
+  .tags #secondary-nav
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + li, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .tags #secondary-nav a + li,
+  .tags #secondary-nav #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + li,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev
+  .tags #secondary-nav a + li,
+  .tags #secondary-nav
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + li,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .tags #secondary-nav a + li,
+  .tags #secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev
   .input-group-append a + li,
   .input-group-append
   .items .secondary-nav .btn + li,
@@ -5038,6 +5443,26 @@ input[type="button"].btn-block {
   .items .secondary-nav a + li,
   .items .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-append a + li,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next
+  .items .secondary-nav a + li,
+  .items .secondary-nav
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + li, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .items .secondary-nav a + li,
+  .items .secondary-nav #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + li,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev
+  .items .secondary-nav a + li,
+  .items .secondary-nav
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + li,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .items .secondary-nav a + li,
+  .items .secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append a + li,
   .input-group-append
   .items #secondary-nav .btn + li,
   .items #secondary-nav
@@ -5172,6 +5597,26 @@ input[type="button"].btn-block {
   .input-group-append a + li,
   .items #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-append a + li,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next
+  .items #secondary-nav a + li,
+  .items #secondary-nav
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + li, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .items #secondary-nav a + li,
+  .items #secondary-nav #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + li,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev
+  .items #secondary-nav a + li,
+  .items #secondary-nav
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + li,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .items #secondary-nav a + li,
+  .items #secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append a + li,
   .input-group-append .pagination .pagination_next .btn + a, .pagination .pagination_next
   .input-group-append .btn + a,
   .input-group-append .browse .secondary-nav .pagination .pagination_next li + a, .pagination .pagination_next
@@ -5247,6 +5692,18 @@ input[type="button"].btn-block {
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) .pagination .pagination_next a + a, .pagination .pagination_next
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-append .pagination .pagination_next a + a, .pagination .pagination_next #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next .pagination .pagination_next a + a, .pagination .pagination_next
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append .pagination .pagination_next a + a, .pagination .pagination_next #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + a,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev .pagination .pagination_next a + a, .pagination .pagination_next
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append .pagination .pagination_next a + a, .pagination .pagination_next
+  #exhibit-page-navigation #exhibit-nav-prev
   .input-group-append a + a,
   .input-group-append
   .pagination .pagination_previous .btn + a,
@@ -5370,6 +5827,26 @@ input[type="button"].btn-block {
   .pagination .pagination_previous a + a,
   .pagination .pagination_previous #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-append a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next
+  .pagination .pagination_previous a + a,
+  .pagination .pagination_previous
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .pagination .pagination_previous a + a,
+  .pagination .pagination_previous #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + a,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev
+  .pagination .pagination_previous a + a,
+  .pagination .pagination_previous
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .pagination .pagination_previous a + a,
+  .pagination .pagination_previous
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append a + a,
   .input-group-append
   .pagination .previous-page .btn + a,
   .pagination .previous-page
@@ -5491,6 +5968,26 @@ input[type="button"].btn-block {
   .input-group-append
   .pagination .previous-page a + a,
   .pagination .previous-page #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next
+  .pagination .previous-page a + a,
+  .pagination .previous-page
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .pagination .previous-page a + a,
+  .pagination .previous-page #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + a,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev
+  .pagination .previous-page a + a,
+  .pagination .previous-page
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .pagination .previous-page a + a,
+  .pagination .previous-page
+  #exhibit-page-navigation #exhibit-nav-prev
   .input-group-append a + a,
   .input-group-append
   .pagination .next-page .btn + a,
@@ -5614,6 +6111,26 @@ input[type="button"].btn-block {
   .pagination .next-page a + a,
   .pagination .next-page #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-append a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next
+  .pagination .next-page a + a,
+  .pagination .next-page
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .pagination .next-page a + a,
+  .pagination .next-page #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + a,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev
+  .pagination .next-page a + a,
+  .pagination .next-page
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .pagination .next-page a + a,
+  .pagination .next-page
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append a + a,
   .input-group-append #sort-links li .btn + a, #sort-links li
   .input-group-append .btn + a,
   .input-group-append .browse .secondary-nav #sort-links li li + a, #sort-links li
@@ -5702,6 +6219,18 @@ input[type="button"].btn-block {
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #sort-links #secondary-nav > li:nth-child(4)
   .input-group-append a + a, #sort-links #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-append a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next #sort-links li a + a, #sort-links li
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append #sort-links li a + a, #sort-links li #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + a,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev #sort-links li a + a, #sort-links li
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append #sort-links li a + a, #sort-links li
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append a + a,
   .input-group-append .show #output-format-list li .btn + a, .show #output-format-list li
   .input-group-append .btn + a,
   .input-group-append .browse .secondary-nav .show #output-format-list li li + a, .show #output-format-list li
@@ -5789,6 +6318,18 @@ input[type="button"].btn-block {
   .input-group-append #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(4) a + a, .show #output-format-list
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full .show #output-format-list #secondary-nav > li:nth-child(4)
   .input-group-append a + a, .show #output-format-list #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next .show #output-format-list li a + a, .show #output-format-list li
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append .show #output-format-list li a + a, .show #output-format-list li #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + a,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev .show #output-format-list li a + a, .show #output-format-list li
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append .show #output-format-list li a + a, .show #output-format-list li
+  #exhibit-page-navigation #exhibit-nav-prev
   .input-group-append a + a,
   .input-group-append #exhibit-pages.full #secondary-nav ul li .btn + a, #exhibit-pages.full #secondary-nav ul li
   .input-group-append .btn + a,
@@ -5886,6 +6427,18 @@ input[type="button"].btn-block {
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-append ul li a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) ul li
   .input-group-append a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + a,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append a + a,
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(3) .btn + a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
   .input-group-append .btn + a,
   .input-group-append .browse .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(3) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
@@ -5970,6 +6523,18 @@ input[type="button"].btn-block {
   .input-group-append a + a,
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-append #secondary-nav > li:nth-child(3) a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3) #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + a,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append a + a,
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) .btn + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-append .btn + a,
   .input-group-append .browse .secondary-nav #exhibit-pages.full #secondary-nav > li:nth-child(4) li + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
@@ -6054,6 +6619,272 @@ input[type="button"].btn-block {
   .input-group-append #secondary-nav > li:nth-child(4) a + a,
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
   .input-group-append a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4) #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + a,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next .btn + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append .btn + a,
+  .input-group-append .browse .secondary-nav #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append .browse .secondary-nav li + a, .browse .secondary-nav
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next .browse .secondary-nav
+  .input-group-append li + a,
+  .input-group-append .browse #secondary-nav #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append .browse #secondary-nav li + a, .browse #secondary-nav
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next .browse #secondary-nav
+  .input-group-append li + a,
+  .input-group-append
+  .tags .secondary-nav #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .tags .secondary-nav li + a,
+  .tags .secondary-nav
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .tags .secondary-nav
+  .input-group-append li + a,
+  .input-group-append
+  .tags #secondary-nav #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .tags #secondary-nav li + a,
+  .tags #secondary-nav
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .tags #secondary-nav
+  .input-group-append li + a,
+  .input-group-append
+  .items .secondary-nav #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .items .secondary-nav li + a,
+  .items .secondary-nav
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .items .secondary-nav
+  .input-group-append li + a,
+  .input-group-append
+  .items #secondary-nav #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .items #secondary-nav li + a,
+  .items #secondary-nav
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next li + a, #exhibit-page-navigation #exhibit-nav-next
+  .items #secondary-nav
+  .input-group-append li + a,
+  .input-group-append .pagination .pagination_next #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append .pagination .pagination_next a + a, .pagination .pagination_next
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .pagination .pagination_next
+  .input-group-append a + a,
+  .input-group-append
+  .pagination .pagination_previous #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .pagination .pagination_previous a + a,
+  .pagination .pagination_previous
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .pagination .pagination_previous
+  .input-group-append a + a,
+  .input-group-append
+  .pagination .previous-page #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .pagination .previous-page a + a,
+  .pagination .previous-page
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .pagination .previous-page
+  .input-group-append a + a,
+  .input-group-append
+  .pagination .next-page #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append
+  .pagination .next-page a + a,
+  .pagination .next-page
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .pagination .next-page
+  .input-group-append a + a,
+  .input-group-append #sort-links li #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append #sort-links li a + a, #sort-links li
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next #sort-links li
+  .input-group-append a + a,
+  .input-group-append .show #output-format-list li #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append .show #output-format-list li a + a, .show #output-format-list li
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next .show #output-format-list li
+  .input-group-append a + a,
+  .input-group-append #exhibit-pages.full #secondary-nav ul li #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next #exhibit-pages.full #secondary-nav ul li
+  .input-group-append a + a,
+  .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(3) #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next #exhibit-pages.full #secondary-nav > li:nth-child(3)
+  .input-group-append a + a,
+  .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-prev #exhibit-nav-next a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next #exhibit-nav-prev a + a, #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next #exhibit-nav-prev
+  .input-group-append a + a,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev .btn + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append .btn + a,
+  .input-group-append .browse .secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append .browse .secondary-nav li + a, .browse .secondary-nav
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev .browse .secondary-nav
+  .input-group-append li + a,
+  .input-group-append .browse #secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append .browse #secondary-nav li + a, .browse #secondary-nav
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev .browse #secondary-nav
+  .input-group-append li + a,
+  .input-group-append
+  .tags .secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .tags .secondary-nav li + a,
+  .tags .secondary-nav
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .tags .secondary-nav
+  .input-group-append li + a,
+  .input-group-append
+  .tags #secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .tags #secondary-nav li + a,
+  .tags #secondary-nav
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .tags #secondary-nav
+  .input-group-append li + a,
+  .input-group-append
+  .items .secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .items .secondary-nav li + a,
+  .items .secondary-nav
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .items .secondary-nav
+  .input-group-append li + a,
+  .input-group-append
+  .items #secondary-nav
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .items #secondary-nav li + a,
+  .items #secondary-nav
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev li + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .items #secondary-nav
+  .input-group-append li + a,
+  .input-group-append .pagination .pagination_next
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append .pagination .pagination_next a + a, .pagination .pagination_next
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .pagination .pagination_next
+  .input-group-append a + a,
+  .input-group-append
+  .pagination .pagination_previous
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .pagination .pagination_previous a + a,
+  .pagination .pagination_previous
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .pagination .pagination_previous
+  .input-group-append a + a,
+  .input-group-append
+  .pagination .previous-page
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .pagination .previous-page a + a,
+  .pagination .previous-page
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .pagination .previous-page
+  .input-group-append a + a,
+  .input-group-append
+  .pagination .next-page
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append
+  .pagination .next-page a + a,
+  .pagination .next-page
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .pagination .next-page
+  .input-group-append a + a,
+  .input-group-append #sort-links li
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append #sort-links li a + a, #sort-links li
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev #sort-links li
+  .input-group-append a + a,
+  .input-group-append .show #output-format-list li
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append .show #output-format-list li a + a, .show #output-format-list li
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev .show #output-format-list li
+  .input-group-append a + a,
+  .input-group-append #exhibit-pages.full #secondary-nav ul li
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append #exhibit-pages.full #secondary-nav ul li a + a, #exhibit-pages.full #secondary-nav ul li
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev #exhibit-pages.full #secondary-nav ul li
+  .input-group-append a + a,
+  .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(3)
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(3) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev #exhibit-pages.full #secondary-nav > li:nth-child(3)
+  .input-group-append a + a,
+  .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + a,
+  #exhibit-page-navigation #exhibit-nav-prev #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next #exhibit-nav-prev a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-prev #exhibit-nav-next a + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append #exhibit-nav-prev a + a, #exhibit-page-navigation #exhibit-nav-prev #exhibit-nav-next
+  .input-group-append a + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-prev a + a, #exhibit-page-navigation #exhibit-nav-prev
+  .input-group-append a + a,
   .input-group-append .btn + .input-group-text,
   .input-group-append .browse .secondary-nav li + .input-group-text, .browse .secondary-nav
   .input-group-append li + .input-group-text,
@@ -6098,6 +6929,12 @@ input[type="button"].btn-block {
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(3) a + .input-group-text, #exhibit-pages.full #secondary-nav > li:nth-child(3)
   .input-group-append a + .input-group-text,
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) a + .input-group-text, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append a + .input-group-text,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next a + .input-group-text, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append a + .input-group-text,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev a + .input-group-text,
+  #exhibit-page-navigation #exhibit-nav-prev
   .input-group-append a + .input-group-text,
   .input-group-append .input-group-text + .input-group-text,
   .input-group-append .input-group-text + .btn,
@@ -6144,6 +6981,12 @@ input[type="button"].btn-block {
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group-text + a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
   .input-group-append .input-group-text + a,
   .input-group-append #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group-text + a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+  .input-group-append .input-group-text + a,
+  .input-group-append #exhibit-page-navigation #exhibit-nav-next .input-group-text + a, #exhibit-page-navigation #exhibit-nav-next
+  .input-group-append .input-group-text + a,
+  .input-group-append
+  #exhibit-page-navigation #exhibit-nav-prev .input-group-text + a,
+  #exhibit-page-navigation #exhibit-nav-prev
   .input-group-append .input-group-text + a {
     margin-left: -1px; }
 
@@ -6203,6 +7046,9 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-prepend > a, #exhibit-pages.full #secondary-nav ul li
 .input-group-lg > .input-group-prepend > a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
 .input-group-lg > .input-group-prepend > a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+.input-group-lg > .input-group-prepend > a, #exhibit-page-navigation #exhibit-nav-next
+.input-group-lg > .input-group-prepend > a,
+#exhibit-page-navigation #exhibit-nav-prev
 .input-group-lg > .input-group-prepend > a,
 .input-group-lg > .input-group-append > .btn, .browse .secondary-nav
 .input-group-lg > .input-group-append > li, .browse #secondary-nav
@@ -6226,6 +7072,9 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-append > a, #exhibit-pages.full #secondary-nav ul li
 .input-group-lg > .input-group-append > a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
 .input-group-lg > .input-group-append > a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+.input-group-lg > .input-group-append > a, #exhibit-page-navigation #exhibit-nav-next
+.input-group-lg > .input-group-append > a,
+#exhibit-page-navigation #exhibit-nav-prev
 .input-group-lg > .input-group-append > a {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
@@ -6262,6 +7111,9 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-prepend > a, #exhibit-pages.full #secondary-nav ul li
 .input-group-sm > .input-group-prepend > a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
 .input-group-sm > .input-group-prepend > a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+.input-group-sm > .input-group-prepend > a, #exhibit-page-navigation #exhibit-nav-next
+.input-group-sm > .input-group-prepend > a,
+#exhibit-page-navigation #exhibit-nav-prev
 .input-group-sm > .input-group-prepend > a,
 .input-group-sm > .input-group-append > .btn, .browse .secondary-nav
 .input-group-sm > .input-group-append > li, .browse #secondary-nav
@@ -6285,6 +7137,9 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-append > a, #exhibit-pages.full #secondary-nav ul li
 .input-group-sm > .input-group-append > a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
 .input-group-sm > .input-group-append > a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+.input-group-sm > .input-group-append > a, #exhibit-page-navigation #exhibit-nav-next
+.input-group-sm > .input-group-append > a,
+#exhibit-page-navigation #exhibit-nav-prev
 .input-group-sm > .input-group-append > a {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
@@ -6302,7 +7157,8 @@ input[type="button"].btn-block {
 .items #secondary-nav .input-group > .input-group-prepend > li, .pagination .pagination_next .input-group > .input-group-prepend > a,
 .pagination .pagination_previous .input-group > .input-group-prepend > a,
 .pagination .previous-page .input-group > .input-group-prepend > a,
-.pagination .next-page .input-group > .input-group-prepend > a, #sort-links li .input-group > .input-group-prepend > a, .show #output-format-list li .input-group > .input-group-prepend > a, #exhibit-pages.full #secondary-nav ul li .input-group > .input-group-prepend > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group > .input-group-prepend > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group > .input-group-prepend > a,
+.pagination .next-page .input-group > .input-group-prepend > a, #sort-links li .input-group > .input-group-prepend > a, .show #output-format-list li .input-group > .input-group-prepend > a, #exhibit-pages.full #secondary-nav ul li .input-group > .input-group-prepend > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group > .input-group-prepend > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group > .input-group-prepend > a, #exhibit-page-navigation #exhibit-nav-next .input-group > .input-group-prepend > a,
+#exhibit-page-navigation #exhibit-nav-prev .input-group > .input-group-prepend > a,
 .input-group > .input-group-prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn, .browse .secondary-nav
 .input-group > .input-group-append:not(:last-child) > li, .browse #secondary-nav
@@ -6326,6 +7182,9 @@ input[type="button"].btn-block {
 .input-group > .input-group-append:not(:last-child) > a, #exhibit-pages.full #secondary-nav ul li
 .input-group > .input-group-append:not(:last-child) > a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
 .input-group > .input-group-append:not(:last-child) > a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+.input-group > .input-group-append:not(:last-child) > a, #exhibit-page-navigation #exhibit-nav-next
+.input-group > .input-group-append:not(:last-child) > a,
+#exhibit-page-navigation #exhibit-nav-prev
 .input-group > .input-group-append:not(:last-child) > a,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle), .browse .secondary-nav
@@ -6350,6 +7209,9 @@ input[type="button"].btn-block {
 .input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav ul li
 .input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav > li:nth-child(3)
 .input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle), #exhibit-pages.full #secondary-nav > li:nth-child(4)
+.input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle), #exhibit-page-navigation #exhibit-nav-next
+.input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle),
+#exhibit-page-navigation #exhibit-nav-prev
 .input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
@@ -6362,7 +7224,8 @@ input[type="button"].btn-block {
 .items #secondary-nav .input-group > .input-group-append > li, .pagination .pagination_next .input-group > .input-group-append > a,
 .pagination .pagination_previous .input-group > .input-group-append > a,
 .pagination .previous-page .input-group > .input-group-append > a,
-.pagination .next-page .input-group > .input-group-append > a, #sort-links li .input-group > .input-group-append > a, .show #output-format-list li .input-group > .input-group-append > a, #exhibit-pages.full #secondary-nav ul li .input-group > .input-group-append > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group > .input-group-append > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group > .input-group-append > a,
+.pagination .next-page .input-group > .input-group-append > a, #sort-links li .input-group > .input-group-append > a, .show #output-format-list li .input-group > .input-group-append > a, #exhibit-pages.full #secondary-nav ul li .input-group > .input-group-append > a, #exhibit-pages.full #secondary-nav > li:nth-child(3) .input-group > .input-group-append > a, #exhibit-pages.full #secondary-nav > li:nth-child(4) .input-group > .input-group-append > a, #exhibit-page-navigation #exhibit-nav-next .input-group > .input-group-append > a,
+#exhibit-page-navigation #exhibit-nav-prev .input-group > .input-group-append > a,
 .input-group > .input-group-append > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn, .browse .secondary-nav
 .input-group > .input-group-prepend:not(:first-child) > li, .browse #secondary-nav
@@ -6386,6 +7249,9 @@ input[type="button"].btn-block {
 .input-group > .input-group-prepend:not(:first-child) > a, #exhibit-pages.full #secondary-nav ul li
 .input-group > .input-group-prepend:not(:first-child) > a, #exhibit-pages.full #secondary-nav > li:nth-child(3)
 .input-group > .input-group-prepend:not(:first-child) > a, #exhibit-pages.full #secondary-nav > li:nth-child(4)
+.input-group > .input-group-prepend:not(:first-child) > a, #exhibit-page-navigation #exhibit-nav-next
+.input-group > .input-group-prepend:not(:first-child) > a,
+#exhibit-page-navigation #exhibit-nav-prev
 .input-group > .input-group-prepend:not(:first-child) > a,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child), .browse .secondary-nav
@@ -6410,6 +7276,9 @@ input[type="button"].btn-block {
 .input-group > .input-group-prepend:first-child > a:not(:first-child), #exhibit-pages.full #secondary-nav ul li
 .input-group > .input-group-prepend:first-child > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(3)
 .input-group > .input-group-prepend:first-child > a:not(:first-child), #exhibit-pages.full #secondary-nav > li:nth-child(4)
+.input-group > .input-group-prepend:first-child > a:not(:first-child), #exhibit-page-navigation #exhibit-nav-next
+.input-group > .input-group-prepend:first-child > a:not(:first-child),
+#exhibit-page-navigation #exhibit-nav-prev
 .input-group > .input-group-prepend:first-child > a:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
@@ -7423,7 +8292,8 @@ input[type="button"].btn-block {
 .items #secondary-nav li .badge, .pagination .pagination_next a .badge,
 .pagination .pagination_previous a .badge,
 .pagination .previous-page a .badge,
-.pagination .next-page a .badge, #sort-links li a .badge, .show #output-format-list li a .badge, #exhibit-pages.full #secondary-nav ul li a .badge, #exhibit-pages.full #secondary-nav > li:nth-child(3) a .badge, #exhibit-pages.full #secondary-nav > li:nth-child(4) a .badge {
+.pagination .next-page a .badge, #sort-links li a .badge, .show #output-format-list li a .badge, #exhibit-pages.full #secondary-nav ul li a .badge, #exhibit-pages.full #secondary-nav > li:nth-child(3) a .badge, #exhibit-pages.full #secondary-nav > li:nth-child(4) a .badge, #exhibit-page-navigation #exhibit-nav-next a .badge,
+#exhibit-page-navigation #exhibit-nav-prev a .badge {
   position: relative;
   top: -1px; }
 
@@ -11181,7 +12051,8 @@ a.text-dark:hover, a.text-dark:focus {
   .items #secondary-nav li):not(.pagination .pagination_next a):not(
   .pagination .pagination_previous a):not(
   .pagination .previous-page a):not(
-  .pagination .next-page a):not(#sort-links li a):not(.show #output-format-list li a):not(#exhibit-pages.full #secondary-nav ul li a):not(#exhibit-pages.full #secondary-nav > li:nth-child(3) a):not(#exhibit-pages.full #secondary-nav > li:nth-child(4) a) {
+  .pagination .next-page a):not(#sort-links li a):not(.show #output-format-list li a):not(#exhibit-pages.full #secondary-nav ul li a):not(#exhibit-pages.full #secondary-nav > li:nth-child(3) a):not(#exhibit-pages.full #secondary-nav > li:nth-child(4) a):not(#exhibit-page-navigation #exhibit-nav-next a):not(
+  #exhibit-page-navigation #exhibit-nav-prev a) {
     text-decoration: underline; }
   abbr[title]::after {
     content: " (" attr(title) ")"; }
@@ -14313,8 +15184,8 @@ h6 {
     text-decoration: none;
     color: #302D3D; }
     #site-title a img {
-      width: auto;
-      height: 100%;
+      width: 100%;
+      height: auto;
       vertical-align: bottom; }
 
 /* -------------------------------------------------------------------------*/
@@ -15258,23 +16129,47 @@ body.files .item-file {
     margin-left: 5%; }
 
 #exhibit-page-navigation {
-  clear: both;
-  margin: 0;
   padding: 1em 0em; }
-  #exhibit-page-navigation #exhibit-nav-next,
-  #exhibit-page-navigation #exhibit-nav-prev {
-    width: 45%;
-    margin: .5em 0; }
+  #exhibit-page-navigation #exhibit-nav-next a,
+  #exhibit-page-navigation #exhibit-nav-prev a {
+    color: #302D3D;
+    border-color: #302D3D; }
+    #exhibit-page-navigation #exhibit-nav-next a:hover,
+    #exhibit-page-navigation #exhibit-nav-prev a:hover {
+      color: #302D3D;
+      background-color: #fff;
+      border-color: #302D3D; }
+    #exhibit-page-navigation #exhibit-nav-next a:focus, #exhibit-page-navigation #exhibit-nav-next a.focus,
+    #exhibit-page-navigation #exhibit-nav-prev a:focus,
+    #exhibit-page-navigation #exhibit-nav-prev a.focus {
+      box-shadow: 0 0 0 0.2rem rgba(48, 45, 61, 0.5); }
+    #exhibit-page-navigation #exhibit-nav-next a.disabled, #exhibit-page-navigation #exhibit-nav-next a:disabled,
+    #exhibit-page-navigation #exhibit-nav-prev a.disabled,
+    #exhibit-page-navigation #exhibit-nav-prev a:disabled {
+      color: #302D3D;
+      background-color: transparent; }
+    #exhibit-page-navigation #exhibit-nav-next a:not(:disabled):not(.disabled):active, #exhibit-page-navigation #exhibit-nav-next a:not(:disabled):not(.disabled).active,
+    .show > #exhibit-page-navigation #exhibit-nav-next a.dropdown-toggle,
+    #exhibit-page-navigation #exhibit-nav-prev a:not(:disabled):not(.disabled):active,
+    #exhibit-page-navigation #exhibit-nav-prev a:not(:disabled):not(.disabled).active,
+    .show >
+    #exhibit-page-navigation #exhibit-nav-prev a.dropdown-toggle {
+      color: #212529;
+      background-color: #fff;
+      border-color: #302D3D; }
+      #exhibit-page-navigation #exhibit-nav-next a:not(:disabled):not(.disabled):active:focus, #exhibit-page-navigation #exhibit-nav-next a:not(:disabled):not(.disabled).active:focus,
+      .show > #exhibit-page-navigation #exhibit-nav-next a.dropdown-toggle:focus,
+      #exhibit-page-navigation #exhibit-nav-prev a:not(:disabled):not(.disabled):active:focus,
+      #exhibit-page-navigation #exhibit-nav-prev a:not(:disabled):not(.disabled).active:focus,
+      .show >
+      #exhibit-page-navigation #exhibit-nav-prev a.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(48, 45, 61, 0.5); }
   #exhibit-page-navigation .current-page {
-    clear: both;
-    display: block;
-    background-color: #626289;
-    padding: .5em 0;
-    color: white;
-    margin-top: .5em; }
-  #exhibit-page-navigation #exhibit-nav-up {
-    clear: both;
-    width: 100%; }
+    text-decoration: underline; }
+  #exhibit-page-navigation #exhibit-nav-next a.next-page {
+    float: right; }
+  #exhibit-page-navigation #exhibit-nav-next a.previous-page {
+    float: right; }
 
 /* -------------------------------------------------------------------------*/
 /* Html5MediaPlayer */
@@ -15343,6 +16238,9 @@ footer {
     footer #footer-logos li a img {
       max-width: 128px;
       max-height: 96px; }
+    footer #footer-logos li a img.cyc {
+      max-width: 76px;
+      max-height: 76px; }
 
 /* -------------------------------------------------------------------------*/
 /* Screen - Mobile */
@@ -15519,19 +16417,8 @@ footer {
     padding-right: 1em; }
   .exhibits.summary #exhibit-pages {
     padding-top: 0; }
-  .exhibits.show #secondary-nav.exhibit-page-nav li {
-    float: left;
-    margin-top: .5em; }
-    .exhibits.show #secondary-nav.exhibit-page-nav li ul li {
-      width: auto; }
-  .exhibits.show #exhibit-page-navigation #exhibit-nav-next,
-  .exhibits.show #exhibit-page-navigation #exhibit-nav-prev {
-    width: 50%; }
-  .exhibits.show #exhibit-page-navigation #exhibit-nav-up {
-    clear: both;
-    width: 33%; }
-    .exhibits.show #exhibit-page-navigation #exhibit-nav-up .current-page {
-      clear: none; } }
+  .exhibits.show #secondary-nav.exhibit-page-nav li ul li {
+    width: auto; } }
 
 /* -------------------------------------------------------------------------*/
 /* Print */

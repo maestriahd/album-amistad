@@ -7,7 +7,7 @@
 
           <div class="container-fluid">
             <div class="row">
-              <div class="col mt-4">
+              <div class="col my-5">
                 <ul class="nav justify-content-center" id="footer-logos">
                   <li class="nav-item">
                     <a href="https://uniandes.edu.co" target="_blank">
@@ -28,7 +28,7 @@
                   </li>
                   <li class="nav-item">
                     <a href="https://www.caroycuervo.gov.co/" target="_blank">
-                      <img src="<?php echo img('caroycuervo-md.png'); ?>" alt="">
+                      <img src="<?php echo img('caroycuervo-md.png'); ?>" alt="" class="cyc">
 
                     </a>
                   </li>

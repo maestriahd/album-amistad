@@ -10,7 +10,7 @@
 <?php echo $this->form('search-form', $options['form_attributes']); ?>
 <div class="input-group">
   <div class="input-group-prepend w-100">
-    <?php echo $this->formText('query', $filters['query'], array('title' => __('Search'), 'class'=>'form-control', 'placeholder'=> 'Que estás buscando ?')); ?>
+    <?php echo $this->formText('query', $filters['query'], array('title' => __('Search'), 'class'=>'form-control', 'placeholder'=> 'Qué estás buscando ?')); ?>
     <?php echo $this->formButton('submit_search', '', array('type' => 'submit', 'class'=>'btn btn-search btn-primary')); ?>
   </div>
 </div>

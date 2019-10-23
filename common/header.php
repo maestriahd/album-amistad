@@ -91,7 +91,7 @@
           </div>
       </nav>
 
-              <!-- end sidebar -->
+        <!-- end sidebar -->
         <div id="main" >
               <!-- header -->
               <header class="container-fluid" id="secondary-header">
@@ -103,14 +103,14 @@
                   </div>
                 </div>
                 <div class="row  header-middle">
-                  <div class="col d-md-none d-lg-block">
+                  <div class="col-sm-12 col-md-8">
                     <div class="row h-100">
                       <div id="site-title" class="align-self-center">
                           <?php echo link_to_home_page(theme_logo()); ?>
                       </div>
                     </div>
                   </div>
-                  <div class="col d-flex align-items-center">
+                  <div class="col col-sm-12 col-md-4 d-flex align-items-center">
                     <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
                     <?php echo nav_search_form(array('show_advanced' => true)); ?>
                     <?php else: ?>

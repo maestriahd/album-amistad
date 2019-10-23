@@ -304,8 +304,8 @@ h6 {
       color:$primary;
       img{
         //max-width: 100%;
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
         vertical-align: bottom;
       }
     }
@@ -1280,26 +1280,38 @@ body.files .item-file {
 }
 
 #exhibit-page-navigation {
-    clear:both;
-    margin:0;
+    //clear:both;
+    //margin:0;
     padding:1em 0em;
 
     #exhibit-nav-next,
-        #exhibit-nav-prev {
-            width: 45%;
-            margin:.5em 0;
+    #exhibit-nav-prev {
+        //width: 45%;
+        //margin:.5em 0;
+        a{
+            //@include link-button;
+            @extend .btn;
+            @include button-outline-variant($primary, $color-hover: $primary, $active-background: color-yiq($primary), $active-border: $primary);
         }
+    }
     .current-page {
-        clear:both;
-        display:block;
-        background-color: $accent-main;
-        padding:.5em 0;
-        color:white;
-        margin-top:.5em;
+        text-decoration: underline;
+        //clear:both;
+        //display:block;
+        //padding:.5em ;
+        //margin-top:.5em;
     }
     #exhibit-nav-up {
-        clear:both;
-        width:100%;
+        //clear:both;
+        //width:100%;
+    }
+    #exhibit-nav-next{
+        a.next-page{
+            float: right;
+        }
+        a.previous-page{
+            float: right;
+        }
     }
 }
 /* -------------------------------------------------------------------------*/
@@ -1387,6 +1399,10 @@ footer{
           max-width: 128px;
           max-height: 96px;
         }
+        img.cyc{
+            max-width: 76px;
+            max-height: 76px;
+          }
       }
     }
 
