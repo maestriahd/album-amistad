@@ -15771,16 +15771,9 @@ h6 {
 
 /* -------------------------------------------------------------------------*/
 /* Tables */
-table {
-  width: 100%;
-  margin: 1em 0;
-  overflow: auto; }
-
-th,
 td {
-  border-bottom: 1px solid #e9ecef;
   margin: 0;
-  padding: 0.5em 0; }
+  padding: 1.6em 0; }
 
 th {
   border-width: 3px;
